@@ -9405,10 +9405,92 @@ div.wrapper {
     </pre>       
 </div>
 
-<!-- ################ JERARQUIA DE PUNTOS ########### -->
+<!-- ################ LISTA DE VARIABLES / JERARQUIA - PROMEDIO DIA ########### -->
 
-  <div class="wrapper force-select-all" ng-show="plantilla == 'Jerarquía de puntos'">
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista y Jerarquía DIA'">
   <pre>
+ {
+   "watchLists":[
+      {
+         "xid":"WL_{{numeroEstacion}}_DIA",
+         "name":"{{nombreEstacion}} - Promedio Diario",
+         "user":"admin",
+         "dataPoints":[
+            <div ng-show="AN">
+            "DP_{{numeroEstacion}}_PDIA_AN",
+            </div>
+            <div ng-show="HR">
+            "DP_{{numeroEstacion}}_PDIA_HR",
+            </div>
+            <div ng-show="LL">
+            "DP_{{numeroEstacion}}_PDIA_LL",
+            </div>
+            <div ng-show="MP10">
+            "DP_{{numeroEstacion}}_PDIA_MP10",
+            </div>
+            <div ng-show="MP10N">
+            "DP_{{numeroEstacion}}_PDIA_MP10N",
+            </div>
+            <div ng-show="MP25">
+            "DP_{{numeroEstacion}}_PDIA_MP25",
+            </div>
+            <div ng-show="MP1">
+            "DP_{{numeroEstacion}}_PDIA_MP1",
+            </div>
+            <div ng-show="MPTOTALES">
+            "DP_{{numeroEstacion}}_PDIA_MPTOTALES",
+            </div>
+            <div ng-show="MP25N">
+            "DP_{{numeroEstacion}}_PDIA_MP25N",
+            </div>
+            <div ng-show="RS">
+            "DP_{{numeroEstacion}}_PDIA_RS",
+            </div>
+            <div ng-show="PA">
+            "DP_{{numeroEstacion}}_PDIA_PA",
+            </div>
+            <div ng-show="UV">
+            "DP_{{numeroEstacion}}_PDIA_UV",
+            </div>
+            <div ng-show="SIG">
+            "DP_{{numeroEstacion}}_PDIA_SIG",
+            </div>
+            <div ng-show="TA">
+            "DP_{{numeroEstacion}}_PDIA_TA",
+            </div>
+            <div ng-show="TI">
+            "DP_{{numeroEstacion}}_PDIA_TI",
+            </div>
+            <div ng-show="WD">
+            "DP_{{numeroEstacion}}_PDIA_WD",
+            </div>
+            <div ng-show="WS">
+            "DP_{{numeroEstacion}}_PDIA_WS",
+            </div>
+            <div ng-show="UVA">
+            "DP_{{numeroEstacion}}_PDIA_UVA",
+            </div>
+            <div ng-show="UVB">
+            "DP_{{numeroEstacion}}_PDIA_UVB",
+            </div>
+            <div ng-show="EVAP">
+            "DP_{{numeroEstacion}}_PDIA_EVAP",
+            </div>
+            <div ng-show="MPCO">
+            "DP_{{numeroEstacion}}_PDIA_MPCO",
+            </div>
+
+         ],
+         "data":null,
+         "editPermission":"",
+         "folderIds":null,
+         "params":null,
+         "query":null,
+         "readPermission":"user",
+         "type":"static"
+      }
+   ]
+},
   {
 
     "pointHierarchy":[
@@ -9494,244 +9576,14 @@ div.wrapper {
 
                       ],
  
-                      "name":"Diario",
- 
-                      "subfolders":[
- 
-                      ]
- 
-                   },
- 
-                   {
- 
-                      "points":[
-                         <div ng-show="AN">
-                         "DP_{{numeroEstacion}}_PHR_AN",
-                         </div>
-                         <div ng-show="HR">
-                         "DP_{{numeroEstacion}}_PHR_HR",
-                         </div>
-                         <div ng-show="LL">
-                         "DP_{{numeroEstacion}}_PHR_LL",
-                         </div>
-                         <div ng-show="MP10">
-                         "DP_{{numeroEstacion}}_PHR_MP10",
-                         </div>
-                         <div ng-show="MP10N">
-                         "DP_{{numeroEstacion}}_PHR_MP10N",
-                         </div>
-                         <div ng-show="MP25">
-                         "DP_{{numeroEstacion}}_PHR_MP25",
-                         </div>
-                         <div ng-show="MP1">
-                         "DP_{{numeroEstacion}}_PHR_MP1",
-                         </div>
-                         <div ng-show="MPTOTALES">
-                         "DP_{{numeroEstacion}}_PHR_MPTOTALES",
-                         </div>
-                         <div ng-show="MP25N">
-                         "DP_{{numeroEstacion}}_PHR_MP25N",
-                         </div>
-                         <div ng-show="RS">
-                         "DP_{{numeroEstacion}}_PHR_RS",
-                         </div>
-                         <div ng-show="PA">
-                         "DP_{{numeroEstacion}}_PHR_PA",
-                         </div>
-                         <div ng-show="UV">
-                         "DP_{{numeroEstacion}}_PHR_UV",
-                         </div>
-                         <div ng-show="SIG">
-                         "DP_{{numeroEstacion}}_PHR_SIG",
-                         </div>
-                         <div ng-show="TA">
-                         "DP_{{numeroEstacion}}_PHR_TA",
-                         </div>
-                         <div ng-show="TI">
-                         "DP_{{numeroEstacion}}_PHR_TI",
-                         </div>
-                         <div ng-show="WD">
-                         "DP_{{numeroEstacion}}_PHR_WD",
-                         </div>
-                         <div ng-show="WS">
-                         "DP_{{numeroEstacion}}_PHR_WS",
-                         </div>
-                         <div ng-show="UVA">
-                         "DP_{{numeroEstacion}}_PHR_UVA",
-                         </div>
-                         <div ng-show="UVB">
-                         "DP_{{numeroEstacion}}_PHR_UVB",
-                         </div>
-                         <div ng-show="EVAP">
-                         "DP_{{numeroEstacion}}_PHR_EVAP",
-                         </div>
-                         <div ng-show="MPCO">
-                         "DP_{{numeroEstacion}}_PHR_MPCO"
-                         </div>
-                      ],
- 
-                      "name":"Horario",
- 
-                      "subfolders":[
- 
-                      ]
- 
-                   },
- 
-                   {
-                      "points":[
-                      <div ng-show="AN">
-                      "DP_{{numeroEstacion}}_MIN_AN",
-                      </div>
-                      <div ng-show="HR">
-                      "DP_{{numeroEstacion}}_MIN_HR",
-                      </div>
-                      <div ng-show="LL">
-                      "DP_{{numeroEstacion}}_MIN_LL",
-                      </div>
-                      <div ng-show="MP10">
-                      "DP_{{numeroEstacion}}_MIN_MP10",
-                      </div>
-                      <div ng-show="MP10N">
-                      "DP_{{numeroEstacion}}_MIN_MP10N",
-                      </div>
-                      <div ng-show="MP25">
-                      "DP_{{numeroEstacion}}_MIN_MP25",
-                      </div>
-                      <div ng-show="MP1">
-                      "DP_{{numeroEstacion}}_MIN_MP1",
-                      </div>
-                      <div ng-show="MPTOTALES">
-                      "DP_{{numeroEstacion}}_MIN_MPTOTALES",
-                      </div>
-                      <div ng-show="MP25N">
-                      "DP_{{numeroEstacion}}_MIN_MP25N",
-                      </div>
-                      <div ng-show="RS">
-                      "DP_{{numeroEstacion}}_MIN_RS",
-                      </div>
-                      <div ng-show="PA">
-                      "DP_{{numeroEstacion}}_MIN_PA",
-                      </div>
-                      <div ng-show="UV">
-                      "DP_{{numeroEstacion}}_MIN_UV",
-                      </div>
-                      <div ng-show="SIG">
-                      "DP_{{numeroEstacion}}_MIN_SIG",
-                      </div>
-                      <div ng-show="TA">
-                      "DP_{{numeroEstacion}}_MIN_TA",
-                      </div>
-                      <div ng-show="TI">
-                      "DP_{{numeroEstacion}}_MIN_TI",
-                      </div>
-                      <div ng-show="WD">
-                      "DP_{{numeroEstacion}}_MIN_WD",
-                      </div>
-                      <div ng-show="WS">
-                      "DP_{{numeroEstacion}}_MIN_WS",
-                      </div>
-                      <div ng-show="UVA">
-                      "DP_{{numeroEstacion}}_MIN_UVA",
-                      </div>
-                      <div ng-show="UVB">
-                      "DP_{{numeroEstacion}}_MIN_UVB",
-                      </div>
-                      <div ng-show="EVAP">
-                      "DP_{{numeroEstacion}}_MIN_EVAP",
-                      </div>
-                      <div ng-show="MPCO">
-                      "DP_{{numeroEstacion}}_MIN_MPCO",
-                      </div>
-                      <div ng-show="RUIDO">
-                      "DP_{{numeroEstacion}}_MIN_RUIDO",
-                      </div>
-                      ],
- 
-                      "name":"Minuto",
- 
-                      "subfolders":[
- 
-                      ]
- 
-                   },
- 
-                   {
- 
-                      "points":[
-                      <div ng-show="AN">
-                      "DP_{{numeroEstacion}}_P15_AN",
-                      </div>
-                      <div ng-show="HR">
-                      "DP_{{numeroEstacion}}_P15_HR",
-                      </div>
-                      <div ng-show="LL">
-                      "DP_{{numeroEstacion}}_P15_LL",
-                      </div>
-                      <div ng-show="MP10">
-                      "DP_{{numeroEstacion}}_P15_MP10",
-                      </div>
-                      <div ng-show="MP10N">
-                      "DP_{{numeroEstacion}}_P15_MP10N",
-                      </div>
-                      <div ng-show="MP25">
-                      "DP_{{numeroEstacion}}_P15_MP25",
-                      </div>
-                      <div ng-show="MP1">
-                      "DP_{{numeroEstacion}}_P15_MP1",
-                      </div>
-                      <div ng-show="MPTOTALES">
-                      "DP_{{numeroEstacion}}_P15_MPTOTALES",
-                      </div>
-                      <div ng-show="MP25N">
-                      "DP_{{numeroEstacion}}_P15_MP25N",
-                      </div>
-                      <div ng-show="RS">
-                      "DP_{{numeroEstacion}}_P15_RS",
-                      </div>
-                      <div ng-show="PA">
-                      "DP_{{numeroEstacion}}_P15_PA",
-                      </div>
-                      <div ng-show="UV">
-                      "DP_{{numeroEstacion}}_P15_UV",
-                      </div>
-                      <div ng-show="SIG">
-                      "DP_{{numeroEstacion}}_P15_SIG",
-                      </div>
-                      <div ng-show="TA">
-                      "DP_{{numeroEstacion}}_P15_TA",
-                      </div>
-                      <div ng-show="TI">
-                      "DP_{{numeroEstacion}}_P15_TI",
-                      </div>
-                      <div ng-show="WD">
-                      "DP_{{numeroEstacion}}_P15_WD",
-                      </div>
-                      <div ng-show="WS">
-                      "DP_{{numeroEstacion}}_P15_WS",
-                      </div>
-                      <div ng-show="UVA">
-                      "DP_{{numeroEstacion}}_P15_UVA",
-                      </div>
-                      <div ng-show="UVB">
-                      "DP_{{numeroEstacion}}_P15_UVB",
-                      </div>
-                      <div ng-show="EVAP"> 
-                      "DP_{{numeroEstacion}}_P15_EVAP",
-                      </div>
-                      <div ng-show="MPCO">
-                      "DP_{{numeroEstacion}}_P15_MPCO",
-                      </div>
-                      ],
- 
-                      "name":"Quinceminutal",
+                      "name":"Promedio Diario",
  
                       "subfolders":[
  
                       ]
  
                    }
- 
+
             ]
  
        }
@@ -9739,102 +9591,13 @@ div.wrapper {
     ]
  
  }
+ 
   </pre>
 </div>
 
+<!-- ################ LISTA DE VARIABLES / JERARQUIA - PROMEDIO HORARIO ########### -->
 
-<!-- ################ LISTA DE VARIABLES - PROMEDIO DIA ########### -->
-
-  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables DIA'">
-  <pre>
- {
-   "watchLists":[
-      {
-         "xid":"WL_{{numeroEstacion}}_DIA",
-         "name":"{{nombreEstacion}} - Promedio Diario",
-         "user":"admin",
-         "dataPoints":[
-            <div ng-show="AN">
-            "DP_{{numeroEstacion}}_PDIA_AN",
-            </div>
-            <div ng-show="HR">
-            "DP_{{numeroEstacion}}_PDIA_HR",
-            </div>
-            <div ng-show="LL">
-            "DP_{{numeroEstacion}}_PDIA_LL",
-            </div>
-            <div ng-show="MP10">
-            "DP_{{numeroEstacion}}_PDIA_MP10",
-            </div>
-            <div ng-show="MP10N">
-            "DP_{{numeroEstacion}}_PDIA_MP10N",
-            </div>
-            <div ng-show="MP25">
-            "DP_{{numeroEstacion}}_PDIA_MP25",
-            </div>
-            <div ng-show="MP1">
-            "DP_{{numeroEstacion}}_PDIA_MP1",
-            </div>
-            <div ng-show="MPTOTALES">
-            "DP_{{numeroEstacion}}_PDIA_MPTOTALES",
-            </div>
-            <div ng-show="MP25N">
-            "DP_{{numeroEstacion}}_PDIA_MP25N",
-            </div>
-            <div ng-show="RS">
-            "DP_{{numeroEstacion}}_PDIA_RS",
-            </div>
-            <div ng-show="PA">
-            "DP_{{numeroEstacion}}_PDIA_PA",
-            </div>
-            <div ng-show="UV">
-            "DP_{{numeroEstacion}}_PDIA_UV",
-            </div>
-            <div ng-show="SIG">
-            "DP_{{numeroEstacion}}_PDIA_SIG",
-            </div>
-            <div ng-show="TA">
-            "DP_{{numeroEstacion}}_PDIA_TA",
-            </div>
-            <div ng-show="TI">
-            "DP_{{numeroEstacion}}_PDIA_TI",
-            </div>
-            <div ng-show="WD">
-            "DP_{{numeroEstacion}}_PDIA_WD",
-            </div>
-            <div ng-show="WS">
-            "DP_{{numeroEstacion}}_PDIA_WS",
-            </div>
-            <div ng-show="UVA">
-            "DP_{{numeroEstacion}}_PDIA_UVA",
-            </div>
-            <div ng-show="UVB">
-            "DP_{{numeroEstacion}}_PDIA_UVB",
-            </div>
-            <div ng-show="EVAP">
-            "DP_{{numeroEstacion}}_PDIA_EVAP",
-            </div>
-            <div ng-show="MPCO">
-            "DP_{{numeroEstacion}}_PDIA_MPCO",
-            </div>
-
-         ],
-         "data":null,
-         "editPermission":"",
-         "folderIds":null,
-         "params":null,
-         "query":null,
-         "readPermission":"user",
-         "type":"static"
-      }
-   ]
-} 
-  </pre>
-</div>
-
-<!-- ################ LISTA DE VARIABLES - PROMEDIO HORARIO ########### -->
-
-  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables HR'">
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista y Jerarquía HR'">
   <pre>
  {
    "watchLists":[
@@ -9917,13 +9680,113 @@ div.wrapper {
       }
 
    ]
-} 
+},
+  {
+
+    "pointHierarchy":[
+ 
+       {
+ 
+          "points":[
+ 
+          ],
+ 
+          "name":"{{nombreEstacion}}",
+ 
+          "subfolders":[
+ 
+             {
+ 
+             
+                      "points":[
+                         <div ng-show="AN">
+                         "DP_{{numeroEstacion}}_PHR_AN",
+                         </div>
+                         <div ng-show="HR">
+                         "DP_{{numeroEstacion}}_PHR_HR",
+                         </div>
+                         <div ng-show="LL">
+                         "DP_{{numeroEstacion}}_PHR_LL",
+                         </div>
+                         <div ng-show="MP10">
+                         "DP_{{numeroEstacion}}_PHR_MP10",
+                         </div>
+                         <div ng-show="MP10N">
+                         "DP_{{numeroEstacion}}_PHR_MP10N",
+                         </div>
+                         <div ng-show="MP25">
+                         "DP_{{numeroEstacion}}_PHR_MP25",
+                         </div>
+                         <div ng-show="MP1">
+                         "DP_{{numeroEstacion}}_PHR_MP1",
+                         </div>
+                         <div ng-show="MPTOTALES">
+                         "DP_{{numeroEstacion}}_PHR_MPTOTALES",
+                         </div>
+                         <div ng-show="MP25N">
+                         "DP_{{numeroEstacion}}_PHR_MP25N",
+                         </div>
+                         <div ng-show="RS">
+                         "DP_{{numeroEstacion}}_PHR_RS",
+                         </div>
+                         <div ng-show="PA">
+                         "DP_{{numeroEstacion}}_PHR_PA",
+                         </div>
+                         <div ng-show="UV">
+                         "DP_{{numeroEstacion}}_PHR_UV",
+                         </div>
+                         <div ng-show="SIG">
+                         "DP_{{numeroEstacion}}_PHR_SIG",
+                         </div>
+                         <div ng-show="TA">
+                         "DP_{{numeroEstacion}}_PHR_TA",
+                         </div>
+                         <div ng-show="TI">
+                         "DP_{{numeroEstacion}}_PHR_TI",
+                         </div>
+                         <div ng-show="WD">
+                         "DP_{{numeroEstacion}}_PHR_WD",
+                         </div>
+                         <div ng-show="WS">
+                         "DP_{{numeroEstacion}}_PHR_WS",
+                         </div>
+                         <div ng-show="UVA">
+                         "DP_{{numeroEstacion}}_PHR_UVA",
+                         </div>
+                         <div ng-show="UVB">
+                         "DP_{{numeroEstacion}}_PHR_UVB",
+                         </div>
+                         <div ng-show="EVAP">
+                         "DP_{{numeroEstacion}}_PHR_EVAP",
+                         </div>
+                         <div ng-show="MPCO">
+                         "DP_{{numeroEstacion}}_PHR_MPCO"
+                         </div>
+
+                      ],
+ 
+                      "name":"Promedio Horario",
+ 
+                      "subfolders":[
+ 
+                      ]
+ 
+                   }
+
+            ]
+ 
+       }
+ 
+    ]
+ 
+ }
+ 
   </pre>
 </div>
 
-<!-- ################ LISTA DE VARIABLES - PROMEDIO 15 ########### -->
+<!-- ################ LISTA DE VARIABLES / JERARQUIA - PROMEDIO 15 ########### -->
 
-  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables 15'">
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista y Jerarquía 15'">
   <pre>
  {
    "watchLists":[
@@ -10006,13 +9869,112 @@ div.wrapper {
       },
 
    ]
-} 
+},
+  {
+
+    "pointHierarchy":[
+ 
+       {
+ 
+          "points":[
+ 
+          ],
+ 
+          "name":"{{nombreEstacion}}",
+ 
+          "subfolders":[
+ 
+             {
+ 
+             
+                      "points":[
+                      <div ng-show="AN">
+                      "DP_{{numeroEstacion}}_P15_AN",
+                      </div>
+                      <div ng-show="HR">
+                      "DP_{{numeroEstacion}}_P15_HR",
+                      </div>
+                      <div ng-show="LL">
+                      "DP_{{numeroEstacion}}_P15_LL",
+                      </div>
+                      <div ng-show="MP10">
+                      "DP_{{numeroEstacion}}_P15_MP10",
+                      </div>
+                      <div ng-show="MP10N">
+                      "DP_{{numeroEstacion}}_P15_MP10N",
+                      </div>
+                      <div ng-show="MP25">
+                      "DP_{{numeroEstacion}}_P15_MP25",
+                      </div>
+                      <div ng-show="MP1">
+                      "DP_{{numeroEstacion}}_P15_MP1",
+                      </div>
+                      <div ng-show="MPTOTALES">
+                      "DP_{{numeroEstacion}}_P15_MPTOTALES",
+                      </div>
+                      <div ng-show="MP25N">
+                      "DP_{{numeroEstacion}}_P15_MP25N",
+                      </div>
+                      <div ng-show="RS">
+                      "DP_{{numeroEstacion}}_P15_RS",
+                      </div>
+                      <div ng-show="PA">
+                      "DP_{{numeroEstacion}}_P15_PA",
+                      </div>
+                      <div ng-show="UV">
+                      "DP_{{numeroEstacion}}_P15_UV",
+                      </div>
+                      <div ng-show="SIG">
+                      "DP_{{numeroEstacion}}_P15_SIG",
+                      </div>
+                      <div ng-show="TA">
+                      "DP_{{numeroEstacion}}_P15_TA",
+                      </div>
+                      <div ng-show="TI">
+                      "DP_{{numeroEstacion}}_P15_TI",
+                      </div>
+                      <div ng-show="WD">
+                      "DP_{{numeroEstacion}}_P15_WD",
+                      </div>
+                      <div ng-show="WS">
+                      "DP_{{numeroEstacion}}_P15_WS",
+                      </div>
+                      <div ng-show="UVA">
+                      "DP_{{numeroEstacion}}_P15_UVA",
+                      </div>
+                      <div ng-show="UVB">
+                      "DP_{{numeroEstacion}}_P15_UVB",
+                      </div>
+                      <div ng-show="EVAP"> 
+                      "DP_{{numeroEstacion}}_P15_EVAP",
+                      </div>
+                      <div ng-show="MPCO">
+                      "DP_{{numeroEstacion}}_P15_MPCO",
+                      </div>
+
+                      ],
+ 
+                      "name":"Promedio 15",
+ 
+                      "subfolders":[
+ 
+                      ]
+ 
+                   }
+
+            ]
+ 
+       }
+ 
+    ]
+ 
+ }
   </pre>
 </div>
 
-<!-- ################ LISTA DE VARIABLES - PROMEDIO MINUTO ########### -->
+<!-- ################ LISTA DE VARIABLES / JERARQUIA - PROMEDIO MINUTO ########### -->
 
-  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables MIN'">
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista y Jerarquía MIN'">
   <pre>
  {
    "watchLists":[
@@ -10098,7 +10060,110 @@ div.wrapper {
       }
 
    ]
-} 
+},
+  {
+
+    "pointHierarchy":[
+ 
+       {
+ 
+          "points":[
+ 
+          ],
+ 
+          "name":"{{nombreEstacion}}",
+ 
+          "subfolders":[
+ 
+             {
+ 
+             
+                      "points":[
+                      <div ng-show="AN">
+                      "DP_{{numeroEstacion}}_MIN_AN",
+                      </div>
+                      <div ng-show="HR">
+                      "DP_{{numeroEstacion}}_MIN_HR",
+                      </div>
+                      <div ng-show="LL">
+                      "DP_{{numeroEstacion}}_MIN_LL",
+                      </div>
+                      <div ng-show="MP10">
+                      "DP_{{numeroEstacion}}_MIN_MP10",
+                      </div>
+                      <div ng-show="MP10N">
+                      "DP_{{numeroEstacion}}_MIN_MP10N",
+                      </div>
+                      <div ng-show="MP25">
+                      "DP_{{numeroEstacion}}_MIN_MP25",
+                      </div>
+                      <div ng-show="MP1">
+                      "DP_{{numeroEstacion}}_MIN_MP1",
+                      </div>
+                      <div ng-show="MPTOTALES">
+                      "DP_{{numeroEstacion}}_MIN_MPTOTALES",
+                      </div>
+                      <div ng-show="MP25N">
+                      "DP_{{numeroEstacion}}_MIN_MP25N",
+                      </div>
+                      <div ng-show="RS">
+                      "DP_{{numeroEstacion}}_MIN_RS",
+                      </div>
+                      <div ng-show="PA">
+                      "DP_{{numeroEstacion}}_MIN_PA",
+                      </div>
+                      <div ng-show="UV">
+                      "DP_{{numeroEstacion}}_MIN_UV",
+                      </div>
+                      <div ng-show="SIG">
+                      "DP_{{numeroEstacion}}_MIN_SIG",
+                      </div>
+                      <div ng-show="TA">
+                      "DP_{{numeroEstacion}}_MIN_TA",
+                      </div>
+                      <div ng-show="TI">
+                      "DP_{{numeroEstacion}}_MIN_TI",
+                      </div>
+                      <div ng-show="WD">
+                      "DP_{{numeroEstacion}}_MIN_WD",
+                      </div>
+                      <div ng-show="WS">
+                      "DP_{{numeroEstacion}}_MIN_WS",
+                      </div>
+                      <div ng-show="UVA">
+                      "DP_{{numeroEstacion}}_MIN_UVA",
+                      </div>
+                      <div ng-show="UVB">
+                      "DP_{{numeroEstacion}}_MIN_UVB",
+                      </div>
+                      <div ng-show="EVAP">
+                      "DP_{{numeroEstacion}}_MIN_EVAP",
+                      </div>
+                      <div ng-show="MPCO">
+                      "DP_{{numeroEstacion}}_MIN_MPCO",
+                      </div>
+                      <div ng-show="RUIDO">
+                      "DP_{{numeroEstacion}}_MIN_RUIDO",
+                      </div>
+
+                      ],
+ 
+                      "name":"Promedio Minuto",
+ 
+                      "subfolders":[
+ 
+                      ]
+ 
+                   }
+
+            ]
+ 
+       }
+ 
+    ]
+ 
+ }
+ 
   </pre>
 </div>
 
@@ -10114,7 +10179,7 @@ div.wrapper {
         /*CR1000*/
         var app = angular.module('myScriptCreator', []);
         app.controller('formCtrl', function($scope) {
-            $scope.plantillas = ["CR1000", "Promedio 15", "Promedio Hora", "Promedio Día", "Jerarquía de puntos", "Lista Variables MIN", "Lista Variables 15", "Lista Variables HR", "Lista Variables DIA"];
+            $scope.plantillas = ["CR1000", "Promedio 15", "Promedio Hora", "Promedio Día", "Lista y Jerarquía MIN", "Lista y Jerarquía 15", "Lista y Jerarquía HR", "Lista y Jerarquía DIA"];
             $scope.plantilla = $scope.plantillas[0];
         });
     </script>
