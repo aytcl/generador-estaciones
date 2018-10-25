@@ -73,7 +73,7 @@
             height: 400px;
         }
     }
-	
+    
 
 div.wrapper {
     -moz-appearance: textfield-multiline;
@@ -87,7 +87,7 @@ div.wrapper {
     resize: both;
     width: 600px;
     margin: auto;
-	background: #d4d4d4;
+    background: #d4d4d4;
 
 }
 
@@ -156,7 +156,7 @@ div.wrapper {
                             Variables
                         </div>
                         <div class="divTableCell">
-						  <ul>
+                          <ul>
                             <input type="checkbox" ng-model="AN"> Altura Nieve </br>
                             <input type="checkbox" ng-model="EVAP"> Evaporación </br>
                             <input type="checkbox" ng-model="HR"> Humedad Relativa </br>
@@ -171,16 +171,16 @@ div.wrapper {
                             <input type="checkbox" ng-model="RUIDO"> Ruido </br>
                             <input type="checkbox" ng-model="PA"> Presión Atmosférica </br>
                             <input type="checkbox" ng-model="PA_MBAR"> Presión Atm. (mBar) </br>
-							<input type="checkbox" ng-model="RS"> Radiación Solar </br>
-							<input type="checkbox" ng-model="UV"> Radiación UV </br>
-							<input type="checkbox" ng-model="UVA"> Radiación UVA </br>
-							<input type="checkbox" ng-model="UVB"> Radiación UVB </br>
-							<input type="checkbox" ng-model="SIG"> Sigma </br>
-							<input type="checkbox" ng-model="TA"> Temperatura Ambiental </br>
-							<input type="checkbox" ng-model="TI"> Temperatura Interior </br>
-							<input type="checkbox" ng-model="WD"> Dirección del Viento </br>
-							<input type="checkbox" ng-model="WS"> Velocidad del Viento </br>
-						  </ul>
+                            <input type="checkbox" ng-model="RS"> Radiación Solar </br>
+                            <input type="checkbox" ng-model="UV"> Radiación UV </br>
+                            <input type="checkbox" ng-model="UVA"> Radiación UVA </br>
+                            <input type="checkbox" ng-model="UVB"> Radiación UVB </br>
+                            <input type="checkbox" ng-model="SIG"> Sigma </br>
+                            <input type="checkbox" ng-model="TA"> Temperatura Ambiental </br>
+                            <input type="checkbox" ng-model="TI"> Temperatura Interior </br>
+                            <input type="checkbox" ng-model="WD"> Dirección del Viento </br>
+                            <input type="checkbox" ng-model="WS"> Velocidad del Viento </br>
+                          </ul>
                         </div>
                     </div>
 
@@ -189,9 +189,9 @@ div.wrapper {
         </form>
         <br>
         <div>
-		    
+            
             <div class="wrapper force-select-all" ng-show="plantilla == 'CR1000'" readonly>
-			<pre>
+            <pre>
               {
                 "dataSources":[
                    {
@@ -231,7 +231,7 @@ div.wrapper {
                    }
                 ],
                 "dataPoints":[
-				 <div ng-show="UVA">
+                 <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_UVA",
                       "name":"UV A",
@@ -289,8 +289,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_UVB",
                       "name":"UV B",
@@ -348,8 +348,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_EVAP",
                       "name":"Evaporacion",
@@ -407,8 +407,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MPCO",
                       "name":"MP Coarse",
@@ -466,8 +466,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_WS",
                       "name":"WS",
@@ -525,8 +525,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_WD",
                       "name":"WD",
@@ -584,8 +584,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_SIG",
                       "name":"Sigma",
@@ -643,8 +643,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_TA",
                       "name":"Temperatura Ambiental",
@@ -702,8 +702,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_HR",
                       "name":"Humedad Relativa",
@@ -761,8 +761,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_PA",
                       "name":"Presión Atmosférica",
@@ -820,8 +820,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_RS",
                       "name":"Radiación Solar",
@@ -880,8 +880,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_UV",
                       "name":"Radiación UV",
@@ -940,8 +940,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_AN",
                       "name":"Altura Nieve",
@@ -999,8 +999,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_LL",
                       "name":"Lluvia Total",
@@ -1058,8 +1058,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MP25",
                       "name":"MP 2.5",
@@ -1118,8 +1118,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MP10",
                       "name":"MP 10",
@@ -1178,8 +1178,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MP1",
                       "name":"MP 1",
@@ -1238,8 +1238,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MPTOTALES",
                       "name":"MP Totales",
@@ -1298,8 +1298,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_TI",
                       "name":"Temperatura Interior",
@@ -1357,8 +1357,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MP25N",
                       "name":"MP 2.5 (N)",
@@ -1417,8 +1417,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10N">
+                   </div>
+                   <div ng-show="MP10N">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_MP10N",
                       "name":"MP 10 (N)",
@@ -1477,8 +1477,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RUIDO">
+                   </div>
+                   <div ng-show="RUIDO">
                    {
                       "xid":"DP_{{numeroEstacion}}_MIN_RUIDO",
                       "name":"Nivel Ruido",
@@ -1532,8 +1532,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVA">
+                   </div>
+                   <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_UVA",
                       "name":"UV A (15 Min)",
@@ -1591,8 +1591,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_UVB",
                       "name":"UV B (15 Min)",
@@ -1650,8 +1650,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_EVAP",
                       "name":"Evaporacion (15 Min)",
@@ -1709,8 +1709,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MPCO",
                       "name":"MP Coarse (15 Min)",
@@ -1768,8 +1768,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_WS",
                       "name":"WS (15 Min)",
@@ -1827,8 +1827,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_WD",
                       "name":"WD (15 Min)",
@@ -1886,8 +1886,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_SIG",
                       "name":"Sigma (15 Min)",
@@ -1945,8 +1945,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_TA",
                       "name":"Temperatura Ambiental (15 Min)",
@@ -2004,8 +2004,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_HR",
                       "name":"Humedad Relativa (15 Min)",
@@ -2063,8 +2063,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_PA",
                       "name":"Presión Atmosférica (15 Min)",
@@ -2122,8 +2122,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_RS",
                       "name":"Radiación Solar (15 Min)",
@@ -2182,8 +2182,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_UV",
                       "name":"Radiación UV (15 Min)",
@@ -2242,8 +2242,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_AN",
                       "name":"Altura Nieve (15 Min)",
@@ -2301,8 +2301,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_LL",
                       "name":"Lluvia Total (15 Min)",
@@ -2360,8 +2360,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MP25",
                       "name":"MP 2.5 (15 Min)",
@@ -2420,8 +2420,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MP10",
                       "name":"MP 10 (15 Min)",
@@ -2480,8 +2480,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MP1",
                       "name":"MP 1 (15 Min)",
@@ -2540,8 +2540,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MPTOTALES",
                       "name":"MP Totales (15 Min)",
@@ -2600,8 +2600,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_TI",
                       "name":"Temperatura Interior (15 Min)",
@@ -2659,8 +2659,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MP25N",
                       "name":"MP 2.5 (N) (15 Min)",
@@ -2720,7 +2720,7 @@ div.wrapper {
                       "tolerance":0.0
                    },
                    </div>
-				   <div ng-show="MP10">
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_15_MP10N",
                       "name":"MP 10 (N) (15 Min)",
@@ -2779,8 +2779,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVA">
+                   </div>
+                   <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_UVA",
                       "name":"UV A (Hr)",
@@ -2838,8 +2838,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_UVB",
                       "name":"UV B (Hr)",
@@ -2897,8 +2897,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_EVAP",
                       "name":"Evaporacion (Hr)",
@@ -2956,8 +2956,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MPCO",
                       "name":"MP Coarse (Hr)",
@@ -3015,8 +3015,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_WS",
                       "name":"WS (Hr)",
@@ -3074,8 +3074,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_WD",
                       "name":"WD (Hr)",
@@ -3133,8 +3133,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_SIG",
                       "name":"Sigma (Hr)",
@@ -3192,8 +3192,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_TA",
                       "name":"Temperatura Ambiental (Hr)",
@@ -3251,8 +3251,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_HR",
                       "name":"Humedad Relativa (Hr)",
@@ -3310,8 +3310,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_PA",
                       "name":"Presión Atmosférica (Hr)",
@@ -3369,8 +3369,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_RS",
                       "name":"Radiación Solar (Hr)",
@@ -3429,8 +3429,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_UV",
                       "name":"Radiación UV (Hr)",
@@ -3489,8 +3489,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_AN",
                       "name":"Altura Nieve (Hr)",
@@ -3548,8 +3548,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_LL",
                       "name":"Lluvia Total (Hr)",
@@ -3607,8 +3607,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MP25",
                       "name":"MP 2.5 (Hr)",
@@ -3667,8 +3667,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MP10",
                       "name":"MP 10 (Hr)",
@@ -3727,8 +3727,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MP1",
                       "name":"MP 1 (Hr)",
@@ -3787,8 +3787,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MPTOTALES",
                       "name":"MP Totales (Hr)",
@@ -3847,8 +3847,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_TI",
                       "name":"Temperatura Interior (Hr)",
@@ -3906,8 +3906,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MP25N",
                       "name":"MP 2.5 (N) (Hr)",
@@ -3966,8 +3966,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10N">
+                   </div>
+                   <div ng-show="MP10N">
                    {
                       "xid":"DP_{{numeroEstacion}}_HR_MP10N",
                       "name":"MP 10 (N) (Hr)",
@@ -4026,8 +4026,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVA">
+                   </div>
+                   <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_UVA",
                       "name":"UV A (Dia)",
@@ -4085,8 +4085,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_UVB",
                       "name":"UV B (Dia)",
@@ -4144,8 +4144,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_EVAP",
                       "name":"Evaporacion (Dia)",
@@ -4203,8 +4203,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MPCO",
                       "name":"MP Coarse (Dia)",
@@ -4262,8 +4262,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_WS",
                       "name":"WS (Dia)",
@@ -4321,8 +4321,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_WD",
                       "name":"WD (Dia)",
@@ -4380,8 +4380,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_SIG",
                       "name":"Sigma (Dia)",
@@ -4439,8 +4439,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_TA",
                       "name":"Temperatura Ambiental (Dia)",
@@ -4498,8 +4498,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_HR",
                       "name":"Humedad Relativa (Dia)",
@@ -4557,8 +4557,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_PA",
                       "name":"Presión Atmosférica (Dia)",
@@ -4616,8 +4616,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_RS",
                       "name":"Radiación Solar (Dia)",
@@ -4676,8 +4676,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_UV",
                       "name":"Radiación UV (Dia)",
@@ -4736,8 +4736,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_AN",
                       "name":"Altura Nieve (Dia)",
@@ -4795,8 +4795,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_LL",
                       "name":"Lluvia Total (Dia)",
@@ -4854,8 +4854,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MP25",
                       "name":"MP 2.5 (Dia)",
@@ -4914,8 +4914,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MP10",
                       "name":"MP 10 (Dia)",
@@ -4974,8 +4974,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MP1",
                       "name":"MP 1 (Dia)",
@@ -5034,8 +5034,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MPTOTALES",
                       "name":"MP Totales (Dia)",
@@ -5094,8 +5094,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_TI",
                       "name":"Temperatura Interior (Dia)",
@@ -5153,8 +5153,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MP25N",
                       "name":"MP 2.5 (N) (Dia)",
@@ -5213,8 +5213,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10N">
+                   </div>
+                   <div ng-show="MP10N">
                    {
                       "xid":"DP_{{numeroEstacion}}_DIA_MP10N",
                       "name":"MP 10 (N) (Dia)",
@@ -5273,8 +5273,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_RAW_WD",
                       "name":"WinDir (Raw)",
@@ -5332,17 +5332,17 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    }
-				   </div>
+                   </div>
                 ]
              }
-	</pre>
+    </pre>
 </div>
 
 
 <!-- ########################################################################### -->
 
             <div class="wrapper force-select-all" ng-show="plantilla == 'Promedio 15'" readonly>
-			<pre>
+            <pre>
               {
                 "dataSources":[
                    {
@@ -5359,153 +5359,153 @@ div.wrapper {
                       "purgeType":"YEARS",
                       "updateEvent":"CONTEXT_UPDATE",
                       "context":[
-					     <div ng-show="AN">
+                         <div ng-show="AN">
                          {
                             "varName":"NIEVE",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_AN",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="HR">
+                         </div>
+                         <div ng-show="HR">
                          {
                             "varName":"RH",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_HR",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="LL">
+                         </div>
+                         <div ng-show="LL">
                          {
                             "varName":"LLUVIA",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_LL",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP10">
+                         </div>
+                         <div ng-show="MP10">
                          {
                             "varName":"MP10",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MP10",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP10N">
+                         </div>
+                         <div ng-show="MP10N">
                          {
                             "varName":"MP10N",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MP10N",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP25">
+                         </div>
+                         <div ng-show="MP25">
                          {
                             "varName":"MP25",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MP25",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP25N">
+                         </div>
+                         <div ng-show="MP25N">
                          {
                             "varName":"MP25N",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MP25N",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP1">
+                         </div>
+                         <div ng-show="MP1">
                          {
                             "varName":"MP1",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MP1",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MPTOTALES">
+                         </div>
+                         <div ng-show="MPTOTALES">
                          {
                             "varName":"MPTOTALES",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MPTOTALES",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="PA">
+                         </div>
+                         <div ng-show="PA">
                          {
                             "varName":"PRESION",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_PA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="RS">
+                         </div>
+                         <div ng-show="RS">
                          {
                             "varName":"RSOLAR",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_RS",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UV">
+                         </div>
+                         <div ng-show="UV">
                          {
                             "varName":"UV",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_UV",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="SIG">
+                         </div>
+                         <div ng-show="SIG">
                          {
                             "varName":"SIGMA",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_SIG",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="TA">
+                         </div>
+                         <div ng-show="TA">
                          {
                             "varName":"TA",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_TA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="TI">
+                         </div>
+                         <div ng-show="TI">
                          {
                             "varName":"TI",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_TI",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="WD">
+                         </div>
+                         <div ng-show="WD">
                          {
                             "varName":"WD",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_WD",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="WS">
+                         </div>
+                         <div ng-show="WS">
                          {
                             "varName":"WS",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_WS",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UVA">
+                         </div>
+                         <div ng-show="UVA">
                          {
                             "varName":"UVA",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_UVA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UVB">
+                         </div>
+                         <div ng-show="UVB">
                          {
                             "varName":"UVB",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_UVB",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="EVAP">
+                         </div>
+                         <div ng-show="EVAP">
                          {
                             "varName":"EVAP",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_EVAP",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MPCO">
+                         </div>
+                         <div ng-show="MPCO">
                          {
                             "varName":"MPCO",
                             "dataPointXid":"DP_{{numeroEstacion}}_15_MPCO",
                             "updateContext":false
                          }
-						 </div>
+                         </div>
                       ],
                       "logLevel":"NONE",
                       "cronPattern":"0 0\/5 * * * ?",
@@ -5524,7 +5524,7 @@ div.wrapper {
                    }
                 ],
                 "dataPoints":[
-				   <div ng-show="UVA">
+                   <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_UVA",
                       "name":"UV A",
@@ -5578,8 +5578,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_UVB",
                       "name":"UV B",
@@ -5634,8 +5634,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_EVAP",
                       "name":"Evaporacion",
@@ -5689,8 +5689,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MPCO",
                       "name":"MP Coarse",
@@ -5744,8 +5744,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_AN",
                       "name":"Altura Nieve",
@@ -5799,8 +5799,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_HR",
                       "name":"Humedad Relativa",
@@ -5854,8 +5854,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_LL",
                       "name":"Lluvia Total",
@@ -5909,8 +5909,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MP10",
                       "name":"MP 10",
@@ -5965,8 +5965,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10N">
+                   </div>
+                   <div ng-show="MP10N">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MP10N",
                       "name":"MP 10 (N)",
@@ -6021,8 +6021,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MP25",
                       "name":"MP 2.5",
@@ -6077,8 +6077,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MP25N",
                       "name":"MP 2.5 (N)",
@@ -6133,8 +6133,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MP1",
                       "name":"MP 1",
@@ -6189,8 +6189,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_MPTOTALES",
                       "name":"MP Totales",
@@ -6245,8 +6245,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_PA",
                       "name":"Presión Atmosférica",
@@ -6300,8 +6300,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_RS",
                       "name":"Radiación Solar",
@@ -6356,8 +6356,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_UV",
                       "name":"Radiación UV",
@@ -6412,8 +6412,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_SIG",
                       "name":"Sigma",
@@ -6467,8 +6467,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_TA",
                       "name":"Temperatura Ambiental",
@@ -6522,8 +6522,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_TI",
                       "name":"Temperatura Interior",
@@ -6577,8 +6577,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_WD",
                       "name":"WD",
@@ -6632,8 +6632,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_P15_WS",
                       "name":"WS",
@@ -6662,7 +6662,7 @@ div.wrapper {
                       },
                       "dataSourceXid":"DS_{{numeroEstacion}}_PROM_15",
                       "defaultCacheSize":1,
-                      "deviceName":"Parca - Promedio 15",
+                      "deviceName":"{{nombreEstacion}} - Promedio 15",
                       "discardExtremeValues":false,
                       "discardHighLimit":1.7976931348623157E308,
                       "discardLowLimit":-1.7976931348623157E308,
@@ -6687,7 +6687,7 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    }
-				   </div>
+                   </div>
                 ]
              }
 </pre>             
@@ -6696,7 +6696,7 @@ div.wrapper {
 <!-- ########################### Promedio Hora   ###########################################-->
 
             <div class="wrapper force-select-all" ng-show="plantilla == 'Promedio Hora'">
-			<pre>
+            <pre>
               {
                 "dataSources":[
                    {
@@ -6713,153 +6713,153 @@ div.wrapper {
                       "purgeType":"YEARS",
                       "updateEvent":"CONTEXT_UPDATE",
                       "context":[
-					     <div ng-show="AN">
+                         <div ng-show="AN">
                          {
                             "varName":"NIEVE",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_AN",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="HR">
+                         </div>
+                         <div ng-show="HR">
                          {
                             "varName":"RH",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_HR",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="LL">
+                         </div>
+                         <div ng-show="LL">
                          {
                             "varName":"LLUVIA",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_LL",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP10">
+                         </div>
+                         <div ng-show="MP10">
                          {
                             "varName":"MP10",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MP10",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP10N">
+                         </div>
+                         <div ng-show="MP10N">
                          {
                             "varName":"MP10N",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MP10N",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP25">
+                         </div>
+                         <div ng-show="MP25">
                          {
                             "varName":"MP25",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MP25",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP1">
+                         </div>
+                         <div ng-show="MP1">
                          {
                             "varName":"MP1",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MP1",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MPTOTALES">
+                         </div>
+                         <div ng-show="MPTOTALES">
                          {
                             "varName":"MPTOTALES",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MPTOTALES",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP25N">
+                         </div>
+                         <div ng-show="MP25N">
                          {
                             "varName":"MP25N",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MP25N",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="PA">
+                         </div>
+                         <div ng-show="PA">
                          {
                             "varName":"PRESION",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_PA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="RS">
+                         </div>
+                         <div ng-show="RS">
                          {
                             "varName":"RSOLAR",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_RS",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UV"> 
+                         </div>
+                         <div ng-show="UV"> 
                          {
                             "varName":"UV",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_UV",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="SIG">
+                         </div>
+                         <div ng-show="SIG">
                          {
                             "varName":"SIGMA",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_SIG",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="TA">
+                         </div>
+                         <div ng-show="TA">
                          {
                             "varName":"TA",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_TA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="TI">
+                         </div>
+                         <div ng-show="TI">
                          {
                             "varName":"TI",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_TI",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="WD">
+                         </div>
+                         <div ng-show="WD">
                          {
                             "varName":"WD",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_WD",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="WS">
+                         </div>
+                         <div ng-show="WS">
                          {
                             "varName":"WS",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_WS",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UVA">
+                         </div>
+                         <div ng-show="UVA">
                          {
                             "varName":"UVA",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_UVA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UVB">
+                         </div>
+                         <div ng-show="UVB">
                          {
                             "varName":"UVB",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_UVB",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="EVAP">
+                         </div>
+                         <div ng-show="EVAP">
                          {
                             "varName":"EVAP",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_EVAP",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MPCO">
+                         </div>
+                         <div ng-show="MPCO">
                          {
                             "varName":"MPCO",
                             "dataPointXid":"DP_{{numeroEstacion}}_HR_MPCO",
                             "updateContext":false
                          }
-						 </div>
+                         </div>
                       ],
                       "logLevel":"NONE",
                       "cronPattern":"0 0\/10 * * * ?",
@@ -6878,7 +6878,7 @@ div.wrapper {
                    }
                 ],
                 "dataPoints":[
-				   <div ng-show="UVA">
+                   <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_UVA",
                       "name":"UV A",
@@ -6933,8 +6933,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_UVB",
                       "name":"UV B",
@@ -6989,8 +6989,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_EVAP",
                       "name":"Evaporacion",
@@ -7044,8 +7044,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MPCO",
                       "name":"MP Coarse",
@@ -7100,8 +7100,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_AN",
                       "name":"Altura Nieve",
@@ -7155,8 +7155,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_HR",
                       "name":"Humedad Relativa",
@@ -7210,8 +7210,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_LL",
                       "name":"Lluvia Total",
@@ -7265,8 +7265,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MP10",
                       "name":"MP 10",
@@ -7321,8 +7321,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10N">
+                   </div>
+                   <div ng-show="MP10N">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MP10N",
                       "name":"MP 10 (N)",
@@ -7377,8 +7377,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MP25",
                       "name":"MP 2.5",
@@ -7433,8 +7433,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MP25N",
                       "name":"MP 2.5 (N)",
@@ -7489,8 +7489,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MP1",
                       "name":"MP 1",
@@ -7545,8 +7545,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_MPTOTALES",
                       "name":"MP Totales",
@@ -7601,8 +7601,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_PA",
                       "name":"Presión Atmosférica",
@@ -7656,8 +7656,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_RS",
                       "name":"Radiación Solar",
@@ -7712,8 +7712,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_UV",
                       "name":"Radiación UV",
@@ -7768,8 +7768,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_SIG",
                       "name":"Sigma",
@@ -7823,8 +7823,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_TA",
                       "name":"Temperatura Ambiental",
@@ -7878,8 +7878,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_TI",
                       "name":"Temperatura Interior",
@@ -7933,8 +7933,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_WD",
                       "name":"WD",
@@ -7988,8 +7988,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_PHR_WS",
                       "name":"WS",
@@ -8043,16 +8043,16 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    }
-				   </div>
+                   </div>
                 ]
              }
-	</pre>		 
+    </pre>       
 </div>
 
 <!-- ############### Promedio Día ###################### -->
 
             <div class="wrapper force-select-all" ng-show="plantilla == 'Promedio Día'">
-			  <pre>
+              <pre>
               {
                 "dataSources":[
                    {
@@ -8069,153 +8069,153 @@ div.wrapper {
                       "purgeType":"YEARS",
                       "updateEvent":"CONTEXT_UPDATE",
                       "context":[
-				        <div ng-show="AN">
+                        <div ng-show="AN">
                          {
                             "varName":"NIEVE",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_AN",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="HR">
+                         </div>
+                         <div ng-show="HR">
                          {
                             "varName":"RH",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_HR",
                             "updateContext":false
                          },
-						 </div>
-						 <div ng-show="LL">
+                         </div>
+                         <div ng-show="LL">
                          {
                             "varName":"LLUVIA",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_LL",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP10">
+                         </div>
+                         <div ng-show="MP10">
                          {
                             "varName":"MP10",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MP10",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP10N">
+                         </div>
+                         <div ng-show="MP10N">
                          {
                             "varName":"MP10N",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MP10N",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP25">
+                         </div>
+                         <div ng-show="MP25">
                          {
                             "varName":"MP25",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MP25",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP1">
+                         </div>
+                         <div ng-show="MP1">
                          {
                             "varName":"MP1",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MP1",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MPTOTALES">
+                         </div>
+                         <div ng-show="MPTOTALES">
                          {
                             "varName":"MPTOTALES",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MPTOTALES",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MP25N">
+                         </div>
+                         <div ng-show="MP25N">
                          {
                             "varName":"MP25N",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MP25N",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="RS">
+                         </div>
+                         <div ng-show="RS">
                          {
                             "varName":"RSOLAR",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_RS",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="PA">
+                         </div>
+                         <div ng-show="PA">
                          {
                             "varName":"PRESION",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_PA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UV">
+                         </div>
+                         <div ng-show="UV">
                          {
                             "varName":"UV",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_UV",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="SIG">
+                         </div>
+                         <div ng-show="SIG">
                          {
                             "varName":"SIGMA",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_SIG",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="TA">
+                         </div>
+                         <div ng-show="TA">
                          {
                             "varName":"TA",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_TA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="TI">
+                         </div>
+                         <div ng-show="TI">
                          {
                             "varName":"TI",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_TI",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="WD">
+                         </div>
+                         <div ng-show="WD">
                          {
                             "varName":"WD",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_WD",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="WS">
+                         </div>
+                         <div ng-show="WS">
                          {
                             "varName":"WS",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_WS",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UVA">
+                         </div>
+                         <div ng-show="UVA">
                          {
                             "varName":"UVA",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_UVA",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="UVB">
+                         </div>
+                         <div ng-show="UVB">
                          {
                             "varName":"UVB",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_UVB",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="EVAP">
+                         </div>
+                         <div ng-show="EVAP">
                          {
                             "varName":"EVAP",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_EVAP",
                             "updateContext":false
                          },
-						 </div>
-				         <div ng-show="MPCO">
+                         </div>
+                         <div ng-show="MPCO">
                          {
                             "varName":"MPCO",
                             "dataPointXid":"DP_{{numeroEstacion}}_DIA_MPCO",
                             "updateContext":false
                          }
-						 </div>
+                         </div>
                       ],
                       "logLevel":"NONE",
                       "cronPattern":"0 0\/15 * * * ?",
@@ -8234,7 +8234,7 @@ div.wrapper {
                    }
                 ],
                 "dataPoints":[
-				   <div ng-show="UVA">
+                   <div ng-show="UVA">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_UVA",
                       "name":"UV A",
@@ -8289,8 +8289,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UVB">
+                   </div>
+                   <div ng-show="UVB">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_UVB",
                       "name":"UV B",
@@ -8345,8 +8345,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="EVAP">
+                   </div>
+                   <div ng-show="EVAP">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_EVAP",
                       "name":"Evaporacion",
@@ -8400,8 +8400,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPCO">
+                   </div>
+                   <div ng-show="MPCO">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MPCO",
                       "name":"MP Coarse",
@@ -8456,8 +8456,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="AN">
+                   </div>
+                   <div ng-show="AN">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_AN",
                       "name":"Altura Nieve",
@@ -8511,8 +8511,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="HR">
+                   </div>
+                   <div ng-show="HR">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_HR",
                       "name":"Humedad Relativa",
@@ -8566,8 +8566,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="LL">
+                   </div>
+                   <div ng-show="LL">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_LL",
                       "name":"Lluvia Total",
@@ -8621,8 +8621,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10">
+                   </div>
+                   <div ng-show="MP10">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MP10",
                       "name":"MP 10",
@@ -8677,8 +8677,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP10N">
+                   </div>
+                   <div ng-show="MP10N">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MP10N",
                       "name":"MP 10 (N)",
@@ -8733,8 +8733,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25">
+                   </div>
+                   <div ng-show="MP25">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MP25",
                       "name":"MP 2.5",
@@ -8789,8 +8789,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP25N">
+                   </div>
+                   <div ng-show="MP25N">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MP25N",
                       "name":"MP 2.5 (N)",
@@ -8845,8 +8845,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MP1">
+                   </div>
+                   <div ng-show="MP1">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MP1",
                       "name":"MP 1",
@@ -8901,8 +8901,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="MPTOTALES">
+                   </div>
+                   <div ng-show="MPTOTALES">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_MPTOTALES",
                       "name":"MP Totales",
@@ -8957,8 +8957,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="PA">
+                   </div>
+                   <div ng-show="PA">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_PA",
                       "name":"Presión Atmosférica",
@@ -9012,8 +9012,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="RS">
+                   </div>
+                   <div ng-show="RS">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_RS",
                       "name":"Radiación Solar",
@@ -9068,8 +9068,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="UV">
+                   </div>
+                   <div ng-show="UV">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_UV",
                       "name":"Radiación UV",
@@ -9124,8 +9124,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="SIG">
+                   </div>
+                   <div ng-show="SIG">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_SIG",
                       "name":"Sigma",
@@ -9179,8 +9179,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TA">
+                   </div>
+                   <div ng-show="TA">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_TA",
                       "name":"Temperatura Ambiental",
@@ -9234,8 +9234,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="TI">
+                   </div>
+                   <div ng-show="TI">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_TI",
                       "name":"Temperatura Interior",
@@ -9289,8 +9289,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WD">
+                   </div>
+                   <div ng-show="WD">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_WD",
                       "name":"WD",
@@ -9344,8 +9344,8 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    },
-				   </div>
-				   <div ng-show="WS">
+                   </div>
+                   <div ng-show="WS">
                    {
                       "xid":"DP_{{numeroEstacion}}_PDIA_WS",
                       "name":"WS",
@@ -9399,10 +9399,10 @@ div.wrapper {
                       },
                       "tolerance":0.0
                    }
-				   </div>
+                   </div>
                 ]
              }
-	</pre>		 
+    </pre>       
 </div>
 
 <!-- ################ JERARQUIA DE PUNTOS ########### -->
@@ -9427,70 +9427,70 @@ div.wrapper {
  
              
                       "points":[
-					      <div ng-show="AN">
+                         <div ng-show="AN">
                          "DP_{{numeroEstacion}}_PDIA_AN",
                          </div>
-				         <div ng-show="HR">
+                         <div ng-show="HR">
                          "DP_{{numeroEstacion}}_PDIA_HR",
-						 </div>
-				         <div ng-show="LL">
+                         </div>
+                         <div ng-show="LL">
                          "DP_{{numeroEstacion}}_PDIA_LL",
                          </div>
-				         <div ng-show="MP10">
+                         <div ng-show="MP10">
                          "DP_{{numeroEstacion}}_PDIA_MP10",
                          </div>
-				         <div ng-show="MP10N">
+                         <div ng-show="MP10N">
                          "DP_{{numeroEstacion}}_PDIA_MP10N",
                          </div>
-				         <div ng-show="MP25">
+                         <div ng-show="MP25">
                          "DP_{{numeroEstacion}}_PDIA_MP25",
                          </div>
-				         <div ng-show="MP1">
+                         <div ng-show="MP1">
                          "DP_{{numeroEstacion}}_PDIA_MP1",
                          </div>
-				         <div ng-show="MPTOTALES">
+                         <div ng-show="MPTOTALES">
                          "DP_{{numeroEstacion}}_PDIA_MPTOTALES",
-						 </div>
-				         <div ng-show="MP25N">
+                         </div>
+                         <div ng-show="MP25N">
 
                          "DP_{{numeroEstacion}}_PDIA_MP25N",
                          </div>
-				         <div ng-show="RS">
+                         <div ng-show="RS">
                          "DP_{{numeroEstacion}}_PDIA_RS",
                          </div>
-				         <div ng-show="PA">
+                         <div ng-show="PA">
                          "DP_{{numeroEstacion}}_PDIA_PA",
                          </div>
-				         <div ng-show="UV">
+                         <div ng-show="UV">
                          "DP_{{numeroEstacion}}_PDIA_UV",
                          </div>
-				         <div ng-show="SIG">
+                         <div ng-show="SIG">
                          "DP_{{numeroEstacion}}_PDIA_SIG",
                          </div>
-				         <div ng-show="TA">
+                         <div ng-show="TA">
                          "DP_{{numeroEstacion}}_PDIA_TA",
                          </div>
-				         <div ng-show="TI">
+                         <div ng-show="TI">
                          "DP_{{numeroEstacion}}_PDIA_TI",
                          </div>
-				         <div ng-show="WD">
+                         <div ng-show="WD">
                          "DP_{{numeroEstacion}}_PDIA_WD",
                          </div>
-				         <div ng-show="WS">
+                         <div ng-show="WS">
                          "DP_{{numeroEstacion}}_PDIA_WS",
                          </div>
-				         <div ng-show="UVA">
+                         <div ng-show="UVA">
                          "DP_{{numeroEstacion}}_PDIA_UVA",
                          </div>
-				         <div ng-show="UVB">
+                         <div ng-show="UVB">
                          "DP_{{numeroEstacion}}_PDIA_UVB",
-						 </div>
-				         <div ng-show="EVAP">
+                         </div>
+                         <div ng-show="EVAP">
                          "DP_{{numeroEstacion}}_PDIA_EVAP",
                          </div>
-				         <div ng-show="MPCO">
+                         <div ng-show="MPCO">
                          "DP_{{numeroEstacion}}_PDIA_MPCO"
-						 </div>
+                         </div>
 
                       ],
  
@@ -9505,69 +9505,69 @@ div.wrapper {
                    {
  
                       "points":[
-				         <div ng-show="AN">
+                         <div ng-show="AN">
                          "DP_{{numeroEstacion}}_PHR_AN",
                          </div>
-				         <div ng-show="HR">
+                         <div ng-show="HR">
                          "DP_{{numeroEstacion}}_PHR_HR",
                          </div>
-				         <div ng-show="LL">
+                         <div ng-show="LL">
                          "DP_{{numeroEstacion}}_PHR_LL",
                          </div>
-				         <div ng-show="MP10">
+                         <div ng-show="MP10">
                          "DP_{{numeroEstacion}}_PHR_MP10",
                          </div>
-				         <div ng-show="MP10N">
+                         <div ng-show="MP10N">
                          "DP_{{numeroEstacion}}_PHR_MP10N",
                          </div>
-				         <div ng-show="MP25">
+                         <div ng-show="MP25">
                          "DP_{{numeroEstacion}}_PHR_MP25",
                          </div>
-				         <div ng-show="MP1">
+                         <div ng-show="MP1">
                          "DP_{{numeroEstacion}}_PHR_MP1",
                          </div>
-				         <div ng-show="MPTOTALES">
+                         <div ng-show="MPTOTALES">
                          "DP_{{numeroEstacion}}_PHR_MPTOTALES",
-						 </div>
-				         <div ng-show="MP25N">
+                         </div>
+                         <div ng-show="MP25N">
                          "DP_{{numeroEstacion}}_PHR_MP25N",
                          </div>
-				         <div ng-show="RS">
+                         <div ng-show="RS">
                          "DP_{{numeroEstacion}}_PHR_RS",
                          </div>
-				         <div ng-show="PA">
+                         <div ng-show="PA">
                          "DP_{{numeroEstacion}}_PHR_PA",
                          </div>
-				         <div ng-show="UV">
+                         <div ng-show="UV">
                          "DP_{{numeroEstacion}}_PHR_UV",
                          </div>
-				         <div ng-show="SIG">
+                         <div ng-show="SIG">
                          "DP_{{numeroEstacion}}_PHR_SIG",
                          </div>
-				         <div ng-show="TA">
+                         <div ng-show="TA">
                          "DP_{{numeroEstacion}}_PHR_TA",
                          </div>
-				         <div ng-show="TI">
+                         <div ng-show="TI">
                          "DP_{{numeroEstacion}}_PHR_TI",
                          </div>
-				         <div ng-show="WD">
+                         <div ng-show="WD">
                          "DP_{{numeroEstacion}}_PHR_WD",
                          </div>
-				         <div ng-show="WS">
+                         <div ng-show="WS">
                          "DP_{{numeroEstacion}}_PHR_WS",
                          </div>
-				         <div ng-show="UVA">
+                         <div ng-show="UVA">
                          "DP_{{numeroEstacion}}_PHR_UVA",
                          </div>
-				         <div ng-show="UVB">
+                         <div ng-show="UVB">
                          "DP_{{numeroEstacion}}_PHR_UVB",
                          </div>
-				         <div ng-show="EVAP">
+                         <div ng-show="EVAP">
                          "DP_{{numeroEstacion}}_PHR_EVAP",
                          </div>
-				         <div ng-show="MPCO">
+                         <div ng-show="MPCO">
                          "DP_{{numeroEstacion}}_PHR_MPCO"
-						 </div>
+                         </div>
                       ],
  
                       "name":"Horario",
@@ -9580,72 +9580,72 @@ div.wrapper {
  
                    {
                       "points":[
-					  <div ng-show="AN">
+                      <div ng-show="AN">
                       "DP_{{numeroEstacion}}_MIN_AN",
                       </div>
-				      <div ng-show="HR">
+                      <div ng-show="HR">
                       "DP_{{numeroEstacion}}_MIN_HR",
                       </div>
-				      <div ng-show="LL">
+                      <div ng-show="LL">
                       "DP_{{numeroEstacion}}_MIN_LL",
                       </div>
-				      <div ng-show="MP10">
+                      <div ng-show="MP10">
                       "DP_{{numeroEstacion}}_MIN_MP10",
                       </div>
-				      <div ng-show="MP10N">
+                      <div ng-show="MP10N">
                       "DP_{{numeroEstacion}}_MIN_MP10N",
                       </div>
-				      <div ng-show="MP25">
+                      <div ng-show="MP25">
                       "DP_{{numeroEstacion}}_MIN_MP25",
                       </div>
-				      <div ng-show="MP1">
+                      <div ng-show="MP1">
                       "DP_{{numeroEstacion}}_MIN_MP1",
                       </div>
-				      <div ng-show="MPTOTALES">
+                      <div ng-show="MPTOTALES">
                       "DP_{{numeroEstacion}}_MIN_MPTOTALES",
-					  </div>
-				      <div ng-show="MP25N">
+                      </div>
+                      <div ng-show="MP25N">
                       "DP_{{numeroEstacion}}_MIN_MP25N",
                       </div>
-				      <div ng-show="RS">
+                      <div ng-show="RS">
                       "DP_{{numeroEstacion}}_MIN_RS",
                       </div>
-				      <div ng-show="PA">
+                      <div ng-show="PA">
                       "DP_{{numeroEstacion}}_MIN_PA",
                       </div>
-				      <div ng-show="UV">
+                      <div ng-show="UV">
                       "DP_{{numeroEstacion}}_MIN_UV",
                       </div>
-				      <div ng-show="SIG">
+                      <div ng-show="SIG">
                       "DP_{{numeroEstacion}}_MIN_SIG",
                       </div>
-				      <div ng-show="TA">
+                      <div ng-show="TA">
                       "DP_{{numeroEstacion}}_MIN_TA",
                       </div>
-				      <div ng-show="TI">
+                      <div ng-show="TI">
                       "DP_{{numeroEstacion}}_MIN_TI",
                       </div>
-				      <div ng-show="WD">
+                      <div ng-show="WD">
                       "DP_{{numeroEstacion}}_MIN_WD",
                       </div>
-				      <div ng-show="WS">
+                      <div ng-show="WS">
                       "DP_{{numeroEstacion}}_MIN_WS",
                       </div>
-				      <div ng-show="UVA">
+                      <div ng-show="UVA">
                       "DP_{{numeroEstacion}}_MIN_UVA",
                       </div>
-				      <div ng-show="UVB">
+                      <div ng-show="UVB">
                       "DP_{{numeroEstacion}}_MIN_UVB",
-					  </div>
-				      <div ng-show="EVAP">
+                      </div>
+                      <div ng-show="EVAP">
                       "DP_{{numeroEstacion}}_MIN_EVAP",
                       </div>
-				      <div ng-show="MPCO">
+                      <div ng-show="MPCO">
                       "DP_{{numeroEstacion}}_MIN_MPCO",
-					  </div>
-					  <div ng-show="RUIDO">
+                      </div>
+                      <div ng-show="RUIDO">
                       "DP_{{numeroEstacion}}_MIN_RUIDO",
-					  </div>
+                      </div>
                       ],
  
                       "name":"Minuto",
@@ -9659,67 +9659,67 @@ div.wrapper {
                    {
  
                       "points":[
-				      <div ng-show="AN">
+                      <div ng-show="AN">
                       "DP_{{numeroEstacion}}_P15_AN",
                       </div>
-				      <div ng-show="HR">
+                      <div ng-show="HR">
                       "DP_{{numeroEstacion}}_P15_HR",
                       </div>
-				      <div ng-show="LL">
+                      <div ng-show="LL">
                       "DP_{{numeroEstacion}}_P15_LL",
                       </div>
-				      <div ng-show="MP10">
+                      <div ng-show="MP10">
                       "DP_{{numeroEstacion}}_P15_MP10",
                       </div>
-				      <div ng-show="MP10N">
+                      <div ng-show="MP10N">
                       "DP_{{numeroEstacion}}_P15_MP10N",
                       </div>
-				      <div ng-show="MP25">
+                      <div ng-show="MP25">
                       "DP_{{numeroEstacion}}_P15_MP25",
                       </div>
-				      <div ng-show="MP1">
+                      <div ng-show="MP1">
                       "DP_{{numeroEstacion}}_P15_MP1",
                       </div>
-				      <div ng-show="MPTOTALES">
+                      <div ng-show="MPTOTALES">
                       "DP_{{numeroEstacion}}_P15_MPTOTALES",
-					  </div>
-				      <div ng-show="MP25N">
+                      </div>
+                      <div ng-show="MP25N">
                       "DP_{{numeroEstacion}}_P15_MP25N",
                       </div>
-				      <div ng-show="RS">
+                      <div ng-show="RS">
                       "DP_{{numeroEstacion}}_P15_RS",
                       </div>
-				      <div ng-show="PA">
+                      <div ng-show="PA">
                       "DP_{{numeroEstacion}}_P15_PA",
                       </div>
-				      <div ng-show="UV">
+                      <div ng-show="UV">
                       "DP_{{numeroEstacion}}_P15_UV",
                       </div>
-				      <div ng-show="SIG">
+                      <div ng-show="SIG">
                       "DP_{{numeroEstacion}}_P15_SIG",
                       </div>
-				      <div ng-show="TA">
+                      <div ng-show="TA">
                       "DP_{{numeroEstacion}}_P15_TA",
                       </div>
-				      <div ng-show="TI">
+                      <div ng-show="TI">
                       "DP_{{numeroEstacion}}_P15_TI",
                       </div>
-				      <div ng-show="WD">
+                      <div ng-show="WD">
                       "DP_{{numeroEstacion}}_P15_WD",
                       </div>
-				      <div ng-show="WS">
+                      <div ng-show="WS">
                       "DP_{{numeroEstacion}}_P15_WS",
                       </div>
-				      <div ng-show="UVA">
+                      <div ng-show="UVA">
                       "DP_{{numeroEstacion}}_P15_UVA",
                       </div>
-				      <div ng-show="UVB">
+                      <div ng-show="UVB">
                       "DP_{{numeroEstacion}}_P15_UVB",
-					  </div>
-				      <div ng-show="EVAP"> 
+                      </div>
+                      <div ng-show="EVAP"> 
                       "DP_{{numeroEstacion}}_P15_EVAP",
                       </div>
-				      <div ng-show="MPCO">
+                      <div ng-show="MPCO">
                       "DP_{{numeroEstacion}}_P15_MPCO",
                       </div>
                       ],
@@ -9741,6 +9741,370 @@ div.wrapper {
  }
   </pre>
 </div>
+
+
+<!-- ################ LISTA DE VARIABLES - PROMEDIO DIA ########### -->
+
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables DIA'">
+  <pre>
+ {
+   "watchLists":[
+      {
+         "xid":"WL_{{numeroEstacion}}_DIA",
+         "name":"{{nombreEstacion}} - Promedio Diario",
+         "user":"admin",
+         "dataPoints":[
+            <div ng-show="AN">
+            "DP_{{numeroEstacion}}_PDIA_AN",
+            </div>
+            <div ng-show="HR">
+            "DP_{{numeroEstacion}}_PDIA_HR",
+            </div>
+            <div ng-show="LL">
+            "DP_{{numeroEstacion}}_PDIA_LL",
+            </div>
+            <div ng-show="MP10">
+            "DP_{{numeroEstacion}}_PDIA_MP10",
+            </div>
+            <div ng-show="MP10N">
+            "DP_{{numeroEstacion}}_PDIA_MP10N",
+            </div>
+            <div ng-show="MP25">
+            "DP_{{numeroEstacion}}_PDIA_MP25",
+            </div>
+            <div ng-show="MP1">
+            "DP_{{numeroEstacion}}_PDIA_MP1",
+            </div>
+            <div ng-show="MPTOTALES">
+            "DP_{{numeroEstacion}}_PDIA_MPTOTALES",
+            </div>
+            <div ng-show="MP25N">
+            "DP_{{numeroEstacion}}_PDIA_MP25N",
+            </div>
+            <div ng-show="RS">
+            "DP_{{numeroEstacion}}_PDIA_RS",
+            </div>
+            <div ng-show="PA">
+            "DP_{{numeroEstacion}}_PDIA_PA",
+            </div>
+            <div ng-show="UV">
+            "DP_{{numeroEstacion}}_PDIA_UV",
+            </div>
+            <div ng-show="SIG">
+            "DP_{{numeroEstacion}}_PDIA_SIG",
+            </div>
+            <div ng-show="TA">
+            "DP_{{numeroEstacion}}_PDIA_TA",
+            </div>
+            <div ng-show="TI">
+            "DP_{{numeroEstacion}}_PDIA_TI",
+            </div>
+            <div ng-show="WD">
+            "DP_{{numeroEstacion}}_PDIA_WD",
+            </div>
+            <div ng-show="WS">
+            "DP_{{numeroEstacion}}_PDIA_WS",
+            </div>
+            <div ng-show="UVA">
+            "DP_{{numeroEstacion}}_PDIA_UVA",
+            </div>
+            <div ng-show="UVB">
+            "DP_{{numeroEstacion}}_PDIA_UVB",
+            </div>
+            <div ng-show="EVAP">
+            "DP_{{numeroEstacion}}_PDIA_EVAP",
+            </div>
+            <div ng-show="MPCO">
+            "DP_{{numeroEstacion}}_PDIA_MPCO",
+            </div>
+
+         ],
+         "data":null,
+         "editPermission":"",
+         "folderIds":null,
+         "params":null,
+         "query":null,
+         "readPermission":"user",
+         "type":"static"
+      }
+   ]
+} 
+  </pre>
+</div>
+
+<!-- ################ LISTA DE VARIABLES - PROMEDIO HORARIO ########### -->
+
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables HR'">
+  <pre>
+ {
+   "watchLists":[
+      {
+         "xid":"WL_{{numeroEstacion}}_HR",
+         "name":"{{nombreEstacion}} - Promedio Horario",
+         "user":"admin",
+         "dataPoints":[
+            <div ng-show="AN">
+            "DP_{{numeroEstacion}}_PHR_AN",
+            </div>
+            <div ng-show="HR">
+            "DP_{{numeroEstacion}}_PHR_HR",
+            </div>
+            <div ng-show="LL">
+            "DP_{{numeroEstacion}}_PHR_LL",
+            </div>
+            <div ng-show="MP10">
+            "DP_{{numeroEstacion}}_PHR_MP10",
+            </div>
+            <div ng-show="MP10N">
+            "DP_{{numeroEstacion}}_PHR_MP10N",
+            </div>
+            <div ng-show="MP25">
+            "DP_{{numeroEstacion}}_PHR_MP25",
+            </div>
+            <div ng-show="MP1">
+            "DP_{{numeroEstacion}}_PHR_MP1",
+            </div>
+            <div ng-show="MPTOTALES">
+            "DP_{{numeroEstacion}}_PHR_MPTOTALES",
+            </div>
+            <div ng-show="MP25N">
+            "DP_{{numeroEstacion}}_PHR_MP25N",
+            </div>
+            <div ng-show="RS">
+            "DP_{{numeroEstacion}}_PHR_RS",
+            </div>
+            <div ng-show="PA">
+            "DP_{{numeroEstacion}}_PHR_PA",
+            </div>
+            <div ng-show="UV">
+            "DP_{{numeroEstacion}}_PHR_UV",
+            </div>
+            <div ng-show="SIG">
+            "DP_{{numeroEstacion}}_PHR_SIG",
+            </div>
+            <div ng-show="TA">
+            "DP_{{numeroEstacion}}_PHR_TA",
+            </div>
+            <div ng-show="TI">
+            "DP_{{numeroEstacion}}_PHR_TI",
+            </div>
+            <div ng-show="WD">
+            "DP_{{numeroEstacion}}_PHR_WD",
+            </div>
+            <div ng-show="WS">
+            "DP_{{numeroEstacion}}_PHR_WS",
+            </div>
+            <div ng-show="UVA">
+            "DP_{{numeroEstacion}}_PHR_UVA",
+            </div>
+            <div ng-show="UVB">
+            "DP_{{numeroEstacion}}_PHR_UVB",
+            </div>
+            <div ng-show="EVAP">
+            "DP_{{numeroEstacion}}_PHR_EVAP",
+            </div>
+            <div ng-show="MPCO">
+            "DP_{{numeroEstacion}}_PHR_MPCO"
+            </div>
+         ],
+         "data":null,
+         "editPermission":"",
+         "folderIds":null,
+         "params":null,
+         "query":null,
+         "readPermission":"user",
+         "type":"static"
+      }
+
+   ]
+} 
+  </pre>
+</div>
+
+<!-- ################ LISTA DE VARIABLES - PROMEDIO 15 ########### -->
+
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables 15'">
+  <pre>
+ {
+   "watchLists":[
+      {
+         "xid":"WL_{{numeroEstacion}}_15",
+         "name":"{{nombreEstacion}} - Promedio 15",
+         "user":"admin",
+         "dataPoints":[
+            <div ng-show="AN">
+            "DP_{{numeroEstacion}}_P15_AN",
+            </div>
+            <div ng-show="HR">
+            "DP_{{numeroEstacion}}_P15_HR",
+            </div>
+            <div ng-show="LL">
+            "DP_{{numeroEstacion}}_P15_LL",
+            </div>
+            <div ng-show="MP10">
+            "DP_{{numeroEstacion}}_P15_MP10",
+            </div>
+            <div ng-show="MP10N">
+            "DP_{{numeroEstacion}}_P15_MP10N",
+            </div>
+            <div ng-show="MP25">
+            "DP_{{numeroEstacion}}_P15_MP25",
+            </div>
+            <div ng-show="MP1">
+            "DP_{{numeroEstacion}}_P15_MP1",
+            </div>
+            <div ng-show="MPTOTALES">
+            "DP_{{numeroEstacion}}_P15_MPTOTALES",
+            </div>
+            <div ng-show="MP25N">
+            "DP_{{numeroEstacion}}_P15_MP25N",
+            </div>
+            <div ng-show="RS">
+            "DP_{{numeroEstacion}}_P15_RS",
+            </div>
+            <div ng-show="PA">
+            "DP_{{numeroEstacion}}_P15_PA",
+            </div>
+            <div ng-show="UV">
+            "DP_{{numeroEstacion}}_P15_UV",
+            </div>
+            <div ng-show="SIG">
+            "DP_{{numeroEstacion}}_P15_SIG",
+            </div>
+            <div ng-show="TA">
+            "DP_{{numeroEstacion}}_P15_TA",
+            </div>
+            <div ng-show="TI">
+            "DP_{{numeroEstacion}}_P15_TI",
+            </div>
+            <div ng-show="WD">
+            "DP_{{numeroEstacion}}_P15_WD",
+            </div>
+            <div ng-show="WS">
+            "DP_{{numeroEstacion}}_P15_WS",
+            </div>
+            <div ng-show="UVA">
+            "DP_{{numeroEstacion}}_P15_UVA",
+            </div>
+            <div ng-show="UVB">
+            "DP_{{numeroEstacion}}_P15_UVB",
+            </div>
+            <div ng-show="EVAP"> 
+            "DP_{{numeroEstacion}}_P15_EVAP",
+            </div>
+            <div ng-show="MPCO">
+            "DP_{{numeroEstacion}}_P15_MPCO",
+            </div>
+         ],
+         "data":null,
+         "editPermission":"",
+         "folderIds":null,
+         "params":null,
+         "query":null,
+         "readPermission":"user",
+         "type":"static"
+      },
+
+   ]
+} 
+  </pre>
+</div>
+
+<!-- ################ LISTA DE VARIABLES - PROMEDIO MINUTO ########### -->
+
+  <div class="wrapper force-select-all" ng-show="plantilla == 'Lista Variables MIN'">
+  <pre>
+ {
+   "watchLists":[
+      {
+         "xid":"WL_{{numeroEstacion}}_MIN",
+         "name":"{{nombreEstacion}} - Promedio Minuto",
+         "user":"admin",
+         "dataPoints":[
+            <div ng-show="AN">
+            "DP_{{numeroEstacion}}_MIN_AN",
+            </div>
+            <div ng-show="HR">
+            "DP_{{numeroEstacion}}_MIN_HR",
+            </div>
+            <div ng-show="LL">
+            "DP_{{numeroEstacion}}_MIN_LL",
+            </div>
+            <div ng-show="MP10">
+            "DP_{{numeroEstacion}}_MIN_MP10",
+            </div>
+            <div ng-show="MP10N">
+            "DP_{{numeroEstacion}}_MIN_MP10N",
+            </div>
+            <div ng-show="MP25">
+            "DP_{{numeroEstacion}}_MIN_MP25",
+            </div>
+            <div ng-show="MP1">
+            "DP_{{numeroEstacion}}_MIN_MP1",
+            </div>
+            <div ng-show="MPTOTALES">
+            "DP_{{numeroEstacion}}_MIN_MPTOTALES",
+            </div>
+            <div ng-show="MP25N">
+            "DP_{{numeroEstacion}}_MIN_MP25N",
+            </div>
+            <div ng-show="RS">
+            "DP_{{numeroEstacion}}_MIN_RS",
+            </div>
+            <div ng-show="PA">
+            "DP_{{numeroEstacion}}_MIN_PA",
+            </div>
+            <div ng-show="UV">
+            "DP_{{numeroEstacion}}_MIN_UV",
+            </div>
+            <div ng-show="SIG">
+            "DP_{{numeroEstacion}}_MIN_SIG",
+            </div>
+            <div ng-show="TA">
+            "DP_{{numeroEstacion}}_MIN_TA",
+            </div>
+            <div ng-show="TI">
+            "DP_{{numeroEstacion}}_MIN_TI",
+            </div>
+            <div ng-show="WD">
+            "DP_{{numeroEstacion}}_MIN_WD",
+            </div>
+            <div ng-show="WS">
+            "DP_{{numeroEstacion}}_MIN_WS",
+            </div>
+            <div ng-show="UVA">
+            "DP_{{numeroEstacion}}_MIN_UVA",
+            </div>
+            <div ng-show="UVB">
+            "DP_{{numeroEstacion}}_MIN_UVB",
+            </div>
+            <div ng-show="EVAP">
+            "DP_{{numeroEstacion}}_MIN_EVAP",
+            </div>
+            <div ng-show="MPCO">
+            "DP_{{numeroEstacion}}_MIN_MPCO",
+            </div>
+            <div ng-show="RUIDO">
+            "DP_{{numeroEstacion}}_MIN_RUIDO",
+            </div>
+         ],
+         "data":null,
+         "editPermission":"",
+         "folderIds":null,
+         "params":null,
+         "query":null,
+         "readPermission":"user",
+         "type":"static"
+      }
+
+   ]
+} 
+  </pre>
+</div>
+
+
+
+
         </div>
     </div>
 
@@ -9750,7 +10114,7 @@ div.wrapper {
         /*CR1000*/
         var app = angular.module('myScriptCreator', []);
         app.controller('formCtrl', function($scope) {
-            $scope.plantillas = ["CR1000", "Promedio 15", "Promedio Hora", "Promedio Día", "Jerarquía de puntos"];
+            $scope.plantillas = ["CR1000", "Promedio 15", "Promedio Hora", "Promedio Día", "Jerarquía de puntos", "Lista Variables MIN", "Lista Variables 15", "Lista Variables HR", "Lista Variables DIA"];
             $scope.plantilla = $scope.plantillas[0];
         });
     </script>
