@@ -217,7 +217,6 @@
                                 <input type="checkbox" ng-model="MPTOTALES"> MP Totales </br>
                                 <input type="checkbox" ng-model="RUIDO"> Ruido </br>
                                 <input type="checkbox" ng-model="PA"> Presión Atmosférica </br>
-                                <input type="checkbox" ng-model="PA_MBAR"> Presión Atm. (mBar) </br>
                                 <input type="checkbox" ng-model="RS"> Radiación Solar </br>
                                 <input type="checkbox" ng-model="UV"> Radiación UV </br>
                                 <input type="checkbox" ng-model="UVA"> Radiación UVA </br>
@@ -243,6 +242,17 @@
                                 <hr>
                                 <input type="checkbox" ng-model="desfase"> Desfase Horario Normativo </br>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="divTableRow" ng-show="PA">
+                        <div class="divTableCell">
+                            Presión Atmosférica
+                        </div>
+                        <div class="divTableCell" ng-init="PA_UNIT = 'MMHG'">
+                            <form>
+                                <input value="MMHG" type="radio" ng-model="PA_UNIT"> mmHg </br>
+                                <input value="MBAR" type="radio" ng-model="PA_UNIT"> mBar </br>
+                            </form>
                         </div>
                     </div>
 
@@ -1450,7 +1460,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -1479,8 +1489,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
@@ -2755,7 +2765,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -2784,8 +2794,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
@@ -4005,7 +4015,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -4034,8 +4044,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
@@ -5255,7 +5265,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -5284,8 +5294,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
@@ -6696,7 +6706,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -6725,8 +6735,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
@@ -7865,7 +7875,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -7894,8 +7904,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
@@ -9031,7 +9041,7 @@
                       ],
                       "plotType":"SPLINE",
                       "rollup":"NONE",
-                      "unit":"mmHg",
+                      "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
                       "simplifyType":"NONE",
                       "chartColour":"black",
                       "chartRenderer":{
@@ -9060,8 +9070,8 @@
                       "textRenderer":{
                          "type":"ANALOG",
                          "useUnitAsSuffix":true,
-                         "unit":"mmHg",
-                         "renderedUnit":"mmHg",
+                         "unit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"",</div></div>
+                         "renderedUnit":<div ng-switch="PA_UNIT"><div ng-switch-when="MMHG">"mmHg",</div><div ng-switch-when="MBAR">"mBar",</div></div>
                          "format":"0.00"
                       },
                       "tolerance":0.0
