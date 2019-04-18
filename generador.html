@@ -284,17 +284,17 @@
                       "updatePeriodType":"MINUTES",
                       "inetAddress":"{{IP}}",
                       "port":6785,
-                      "socketTimeout":7000,
+                      "socketTimeout":60000,
                       "dataloggers":[
                          {
                             "address":1,
                             "neighborAddress":0,
-                            "roundTripTime":8000,
+                            "roundTripTime":30000,
                             "securityCode":0,
-                            "tableRequestRetryDelay":10000
+                            "tableRequestRetryDelay":5000
                          }
                       ],
-                      "networkPollPeriods":500,
+                      "networkPollPeriods":1000,
                       "nodeAddress":1000,
                       "quantize":false,
                       "updatePeriods":1,
