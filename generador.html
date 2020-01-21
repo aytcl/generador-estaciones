@@ -184,14 +184,6 @@
                     </div>
                     <div class="divTableRow">
                         <div class="divTableCell">
-                            Nombre Corto (sin espacios)
-                        </div>
-                        <div class="divTableCell">
-                            <input type="text" ng-model="nombre_corto">
-                        </div>
-                    </div>
-                    <div class="divTableRow">
-                        <div class="divTableCell">
                             IP
                         </div>
                         <div class="divTableCell">
@@ -205,27 +197,100 @@
                         <div class="divTableCell">
                             <ul>
                                 <input type="checkbox" ng-model="AN"> Altura Nieve </br>
+                                <div ng-show="AN">
+                                    <input type="text" ng-model="AN_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="EVAP"> Evaporación </br>
+                                <div ng-show="EVAP">
+                                    <input type="text" ng-model="EVAP_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="HUM"> Humedad Relativa </br>
+                                <div ng-show="HUM">
+                                    <input type="text" ng-model="RH_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="LL"> Lluvia Total </br>
+                                <div ng-show="LL">
+                                    <input type="text" ng-model="LL_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MP1"> MP 1 </br>
+                                <div ng-show="MP1">
+                                    <input type="text" ng-model="MP1_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MP25"> MP 2.5 </br>
+                                <div ng-show="MP25">
+                                    <input type="text" ng-model="MP25_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MP25N"> MP 2.5 (N) </br>
+                                <div ng-show="MP25N">
+                                    <input type="text" ng-model="MP25N_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MP10"> MP 10 </br>
+                                <div ng-show="MP10">
+                                    <input type="text" ng-model="MP10_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MP10N"> MP 10 (N) </br>
+                                <div ng-show="MP10N">
+                                    <input type="text" ng-model="MP10N_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MPCO"> MP Coarse </br>
+                                <div ng-show="MPCO">
+                                    <input type="text" ng-model="MPCO_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="MPTOTALES"> MP Totales </br>
+                                <div ng-show="MPTOTALES">
+                                    <input type="text" ng-model="MPTOTALES_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="RUIDO"> Ruido </br>
+                                <div ng-show="RUIDO">
+                                    <input type="text" ng-model="RUIDO_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="PA"> Presión Atmosférica </br>
+                                <div ng-show="PA">
+                                    <input type="text" ng-model="PA_var" style="margin-left: 30px ;">
+
+                                    <div ng-init="PA_UNIT = 'MMHG'">
+                                        <form>
+                                            <input value="MMHG" type="radio" ng-model="PA_UNIT" style="margin-left: 30px ;"> mmHg </br>
+                                            <input value="MBAR" type="radio" ng-model="PA_UNIT" style="margin-left: 30px ;"> mBar </br>
+                                        </form>
+                                    </div>
+                                </div>
                                 <input type="checkbox" ng-model="RS"> Radiación Solar </br>
+                                <div ng-show="RS">
+                                    <input type="text" ng-model="RS_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="UV"> Radiación UV </br>
+                                <div ng-show="UV">
+                                    <input type="text" ng-model="UV_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="UVA"> Radiación UVA </br>
+                                <div ng-show="UVA">
+                                    <input type="text" ng-model="UVA_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="UVB"> Radiación UVB </br>
+                                <div ng-show="UVB">
+                                    <input type="text" ng-model="UVB_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="SIG"> Sigma </br>
+                                <div ng-show="SIG">
+                                    <input type="text" ng-model="SIG_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="TA"> Temperatura Ambiental </br>
+                                <div ng-show="TA">
+                                    <input type="text" ng-model="TA_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="TI"> Temperatura Interior </br>
+                                <div ng-show="TI">
+                                    <input type="text" ng-model="TI_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="WD"> Dirección del Viento </br>
+                                <div ng-show="WD">
+                                    <input type="text" ng-model="WD_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="WS"> Velocidad del Viento </br>
+                                <div ng-show="WS">
+                                    <input type="text" ng-model="WS_var" style="margin-left: 30px ;">
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -236,23 +301,24 @@
                         <div class="divTableCell">
                             <ul>
                                 <input type="checkbox" ng-model="PROM_MIN"> Promedio Minuto </br>
+                                <div ng-show="PROM_MIN">
+                                    <input type="text" ng-model="PMIN_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="PROM_15"> Promedio 15 </br>
+                                <div ng-show="PROM_15">
+                                    <input type="text" ng-model="P15_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="PROM_HR"> Promedio Horario </br>
+                                <div ng-show="PROM_HR">
+                                    <input type="text" ng-model="PHR_var" style="margin-left: 30px ;">
+                                </div>
                                 <input type="checkbox" ng-model="PROM_DIA"> Promedio Diario </br>
+                                <div ng-show="PROM_DIA">
+                                    <input type="text" ng-model="PDIA_var" style="margin-left: 30px ;">
+                                </div>
                                 <hr>
                                 <input type="checkbox" ng-model="desfase"> Desfase Horario Normativo </br>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="divTableRow" ng-show="PA">
-                        <div class="divTableCell">
-                            Presión Atmosférica
-                        </div>
-                        <div class="divTableCell" ng-init="PA_UNIT = 'MMHG'">
-                            <form>
-                                <input value="MMHG" type="radio" ng-model="PA_UNIT"> mmHg </br>
-                                <input value="MBAR" type="radio" ng-model="PA_UNIT"> mBar </br>
-                            </form>
                         </div>
                     </div>
 
@@ -268,7 +334,7 @@
 <!-- ############################# DATASOURCE CR1000 ######################## -->
 
                    {
-                      "xid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "xid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "name":"EST_{{nombreEstacion}}",
                       "enabled":false,
                       "type":"PAKBUS_IP",
@@ -878,7 +944,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -919,11 +985,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_A_Avg",
+                         "columnName":{{UVA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -937,7 +1003,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -978,11 +1044,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_B_Avg",
+                         "columnName":{{UVB_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -996,7 +1062,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1037,11 +1103,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Evap_litros_Tot",
+                         "columnName":{{EVAP_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1055,7 +1121,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1096,11 +1162,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMCoarse_Avg",
+                         "columnName":{{MPCO_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1114,7 +1180,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1155,11 +1221,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Vel",
+                         "columnName":{{WS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1173,7 +1239,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1214,11 +1280,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Dir",
+                         "columnName":{{WD_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1232,7 +1298,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1273,11 +1339,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Sig",
+                         "columnName":{{SIG_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1291,7 +1357,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1332,11 +1398,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Temp_Avg",
+                         "columnName":{{TA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1350,7 +1416,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1391,11 +1457,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Hum_Avg",
+                         "columnName":{{RH_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1409,7 +1475,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1450,11 +1516,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Presion_Avg",
+                         "columnName":{{PA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1468,7 +1534,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1510,11 +1576,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rsolar_Wm2_Avg",
+                         "columnName":{{RS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1528,7 +1594,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1570,11 +1636,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_Index_Avg",
+                         "columnName":{{UV_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1588,7 +1654,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1630,11 +1696,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Al_nieve",
+                         "columnName":{{AN_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1648,7 +1714,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1689,11 +1755,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rain_mm_Tot",
+                         "columnName":{{LL_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1707,7 +1773,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1748,11 +1814,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25_Avg",
+                         "columnName":{{MP25_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1766,7 +1832,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1808,11 +1874,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10_Avg",
+                         "columnName":{{MP10_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1826,7 +1892,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1868,11 +1934,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM1_Avg",
+                         "columnName":{{MP1_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1886,7 +1952,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1928,11 +1994,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMTotales_Avg",
+                         "columnName":{{MPTOTALES_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -1946,7 +2012,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -1988,11 +2054,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"TempInt_Avg",
+                         "columnName":{{TI_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2006,7 +2072,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2047,11 +2113,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25n_Avg",
+                         "columnName":{{MP25N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2065,7 +2131,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2107,11 +2173,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10n_Avg",
+                         "columnName":{{MP10N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2125,7 +2191,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2167,11 +2233,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"ruido",
+                         "columnName":{{RUIDO_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos"
+                         "tableName":{{PMIN_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2181,7 +2247,7 @@
                       "simplifyType":"NONE",
                       "chartColour":"",
                       "chartRenderer":null,
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2225,11 +2291,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_A_Avg",
+                         "columnName":{{UVA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2243,7 +2309,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2284,11 +2350,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_B_Avg",
+                         "columnName":{{UVB_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2302,7 +2368,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2343,11 +2409,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Evap_litros_Tot",
+                         "columnName":{{EVAP_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2361,7 +2427,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2402,11 +2468,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMCoarse_Avg",
+                         "columnName":{{MPCO_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2420,7 +2486,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2461,11 +2527,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Vel",
+                         "columnName":{WS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2479,7 +2545,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2520,11 +2586,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Dir",
+                         "columnName":{{WD_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2538,7 +2604,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2579,11 +2645,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Sig",
+                         "columnName":{{SIG_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2597,7 +2663,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2638,11 +2704,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Temp_Avg",
+                         "columnName":{{TA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2656,7 +2722,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2697,11 +2763,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Hum_Avg",
+                         "columnName":{{RH_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2715,7 +2781,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2756,11 +2822,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Presion_Avg",
+                         "columnName":{{PA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2774,7 +2840,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2816,11 +2882,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rsolar_Wm2_Avg",
+                         "columnName":{{RS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2834,7 +2900,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2876,11 +2942,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_Index_Avg",
+                         "columnName":{{UV_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2894,7 +2960,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2936,11 +3002,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Al_nieve",
+                         "columnName":{{AN_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -2954,7 +3020,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -2995,11 +3061,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rain_mm_Tot",
+                         "columnName":{{LL_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3013,7 +3079,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3054,11 +3120,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25_Avg",
+                         "columnName":{{MP25_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3072,7 +3138,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3114,11 +3180,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10_Avg",
+                         "columnName":{{MP10_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3132,7 +3198,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3174,11 +3240,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM1_Avg",
+                         "columnName":{{MP1_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3192,7 +3258,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3234,11 +3300,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMTotales_Avg",
+                         "columnName":{{MPTOTALES_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3252,7 +3318,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3294,11 +3360,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"TempInt_Avg",
+                         "columnName":{{TI_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3312,7 +3378,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3353,11 +3419,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25n_Avg",
+                         "columnName":{{MP25N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3371,7 +3437,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3413,11 +3479,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10n_Avg",
+                         "columnName":{{MP10N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"minutos15"
+                         "tableName":{{P15_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3431,7 +3497,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3476,11 +3542,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_A_Avg",
+                         "columnName":{{UVA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3494,7 +3560,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3535,11 +3601,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_B_Avg",
+                         "columnName":{{UVB_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3553,7 +3619,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3594,11 +3660,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Evap_litros_Tot",
+                         "columnName":{{EVAP_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3612,7 +3678,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3653,11 +3719,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMCoarse_Avg",
+                         "columnName":{{MPCO_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3671,7 +3737,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3712,11 +3778,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Vel",
+                         "columnName":{WS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3730,7 +3796,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3771,11 +3837,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Dir",
+                         "columnName":{{WD_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3789,7 +3855,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3830,11 +3896,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Sig",
+                         "columnName":{{SIG_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3848,7 +3914,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3889,11 +3955,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Temp_Avg",
+                         "columnName":{{TA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3907,7 +3973,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -3948,11 +4014,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Hum_Avg",
+                         "columnName":{{RH_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -3966,7 +4032,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4007,11 +4073,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Presion_Avg",
+                         "columnName":{{PA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4025,7 +4091,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4067,11 +4133,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rsolar_Wm2_Avg",
+                         "columnName":{{RS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4085,7 +4151,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4127,11 +4193,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_Index_Avg",
+                         "columnName":{{UV_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4145,7 +4211,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4187,11 +4253,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Al_nieve",
+                         "columnName":{{AN_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4205,7 +4271,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4246,11 +4312,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rain_mm_Tot",
+                         "columnName":{{LL_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4264,7 +4330,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4305,11 +4371,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25_Avg",
+                         "columnName":{{MP25_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4323,7 +4389,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4365,11 +4431,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10_Avg",
+                         "columnName":{{MP10_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4383,7 +4449,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4425,11 +4491,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM1_Avg",
+                         "columnName":{{MP1_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4443,7 +4509,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4485,11 +4551,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMTotales_Avg",
+                         "columnName":{{MPTOTALES_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4503,7 +4569,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4545,11 +4611,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"TempInt_Avg",
+                         "columnName":{{TI_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4563,7 +4629,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4604,11 +4670,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25n_Avg",
+                         "columnName":{{MP25N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4622,7 +4688,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4664,11 +4730,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10n_Avg",
+                         "columnName":{{MP10N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"horas"
+                         "tableName":{{PHR_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4682,7 +4748,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4727,11 +4793,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_A_Avg",
+                         "columnName":{{UVA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4745,7 +4811,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4786,11 +4852,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_B_Avg",
+                         "columnName":{{UVB_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4804,7 +4870,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4845,11 +4911,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Evap_litros_Tot",
+                         "columnName":{{EVAP_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4863,7 +4929,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4904,11 +4970,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Vel",
+                         "columnName":{WS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4922,7 +4988,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -4963,11 +5029,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Vel",
+                         "columnName":{WS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -4981,7 +5047,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5022,11 +5088,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Dir",
+                         "columnName":{{WD_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5040,7 +5106,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5081,11 +5147,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Sig",
+                         "columnName":{{SIG_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5099,7 +5165,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5140,11 +5206,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Temp_Avg",
+                         "columnName":{{TA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5158,7 +5224,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5199,11 +5265,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Hum_Avg",
+                         "columnName":{{RH_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5217,7 +5283,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5258,11 +5324,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Presion_Avg",
+                         "columnName":{{PA_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5276,7 +5342,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5318,11 +5384,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rsolar_Wm2_Avg",
+                         "columnName":{{RS_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5336,7 +5402,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5378,11 +5444,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"UV_Index_Avg",
+                         "columnName":{{UV_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5396,7 +5462,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5438,11 +5504,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Al_nieve",
+                         "columnName":{{AN_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5456,7 +5522,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5497,11 +5563,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"Rain_mm_Tot",
+                         "columnName":{{LL_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5515,7 +5581,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5556,11 +5622,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25_Avg",
+                         "columnName":{{MP25_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5574,7 +5640,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5616,11 +5682,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10_Avg",
+                         "columnName":{{MP10_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5634,7 +5700,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5676,11 +5742,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM1_Avg",
+                         "columnName":{{MP1_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5694,7 +5760,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5736,11 +5802,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PMTotales_Avg",
+                         "columnName":{{MPTOTALES_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5754,7 +5820,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5796,11 +5862,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"TempInt_Avg",
+                         "columnName":{{TI_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5814,7 +5880,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5855,11 +5921,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM25n_Avg",
+                         "columnName":{{MP25N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5873,7 +5939,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -5915,11 +5981,11 @@
                          "dataType":"NUMERIC",
                          "collectorType":"HISTORICAL",
                          "arrayIndex":0,
-                         "columnName":"PM10n_Avg",
+                         "columnName":{{MP10N_var}},
                          "historicalRecordStart":0,
                          "loggerAddress":1,
                          "stringLength":1,
-                         "tableName":"dias"
+                         "tableName":{{PDIA_var}}
                       },
                       "eventDetectors":[
                       ],
@@ -5933,7 +5999,7 @@
                          "timePeriodType":"DAYS",
                          "numberOfPeriods":1
                       },
-                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombre_corto}}",
+                      "dataSourceXid":"DS_{{numeroEstacion}}_{{nombreEstacion}}",
                       "defaultCacheSize":1,
                       "deviceName":"EST_{{nombreEstacion}}",
                       "discardExtremeValues":false,
@@ -10157,6 +10223,36 @@
         app.controller('formCtrl', function($scope) {
             $scope.plantillas = ["Promedios", "Listas y Jerarquías"];
             $scope.plantilla = $scope.plantillas[0];
+           /* VALORES POR DEFECTO TABLAS CR1000     */
+           $scope.PMIN_var = "minutos";
+           $scope.P15_var = "minutos15";
+           $scope.PHR_var = "horas";
+           $scope.PDIA_var = "dias";
+
+           /* VALORES POR DEFECTO VARIABLES CR1000     */
+            $scope.AN_var = "Al_nieve";
+            $scope.RH_var = "Hum_Avg";
+            $scope.LL_var = "Rain_mm_Tot";
+            $scope.MP10_var = "PM10_Avg";
+            $scope.MP10N_var = "PM10n_Avg";
+            $scope.MP25_var = "PM25_Avg";
+            $scope.MP1_var = "PM1_Avg";
+            $scope.MPTOTALES_var = "PMTotales_Avg";
+            $scope.MP25N_var = "PM25n_Avg";
+            $scope.RS_var = "Rsolar_Wm2_Avg";
+            $scope.PA_var = "Presion_Avg";
+            $scope.UV_var = "UV_Index_Avg";
+            $scope.SIG_var = "Sig";
+            $scope.TA_var = "Temp_Avg";
+            $scope.TI_var = "TempInt_Avg";
+            $scope.WD_var = "Vel";
+            $scope.WS_var = "Dir";
+            $scope.UVA_var = "UV_A_Avg";
+            $scope.UVB_var = "UV_B_Avg";
+            $scope.EVAP_var = "Evap_litros_Tot";
+            $scope.MPCO_var = "PMCoarse_Avg";
+            $scope.RUIDO_var = "ruido";
+
         });
     </script>
 
